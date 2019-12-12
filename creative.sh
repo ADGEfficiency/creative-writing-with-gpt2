@@ -22,6 +22,7 @@ python run_lm_finetuning.py \
   --do_train \
   --train_data_file="./data/$1/clean.txt" \
   --num_train_epochs=$2 \
-  --overwrite_output_dir
+  --overwrite_output_dir \
+  --save_steps 10000
 }
 alias c-learn='creative-learn'
