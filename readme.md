@@ -6,6 +6,8 @@ One of 2019's most important machine learning stories is the progress of using t
 
 We have been experimenting with retraining GPT2 on authors we like, and using the model as a writing partner. The process has been enlightening, and points towards a future where human and machine can write creatively together.
 
+[You can see examples of text generation from some of the finetuned models here](https://github.com/ADGEfficiency/creative-writing-with-gpt2/tree/master/examples/examples.md).
+
 GPT-2 is not ready to write text on it's own - but with a bit of human supervision you can use the text it generates to write interesting text!  
 
 GPT2 was originally trained on 40 GB of text from Wikipedia & news articles.  This library can be used to generate text with the base GPT2 model and to fine tune the base GPT2 model to text of your choosing.
