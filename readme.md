@@ -2,7 +2,7 @@
 
 [Quickly get started on Google Colab](https://colab.research.google.com/drive/1sNtF6Z9U_fXIIZHfJqpZVr_-vh3Ki8GN).
 
-One of 2019's most important machine learning stories is the progress of using transfer learning on massive language models (such as Open AI'- GPT2 or Google's BERT).
+One of 2019's most important machine learning stories is the progress of using transfer learning on massive language models (such as Open AI's- GPT2 or Google's BERT).
 
 We have been experimenting with retraining GPT2 on authors we like, and using the model as a writing partner. The process has been enlightening, and points towards a future where human and machine can write creatively together.
 
