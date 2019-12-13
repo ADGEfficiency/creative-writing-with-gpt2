@@ -1,679 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- __ _ _ _ __| |_ (_)__ _____
-    / _` | '_/ _| ' \| |\ V / -_)
-    \__,_|_| \__|_||_|_| \_/\___| -->
-  <head>
-    <title>Full text of &quot;The Old Man and the Sea&quot;</title>
-
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-        <meta name="google-site-verification" content="Q2YSouphkkgHkFNP7FgAkc4TmBs1Gmag3uGNndb53B8" />
-    <meta name="google-site-verification" content="bpjKvUvsX0lxfmjg19TLblckWkDpnptZEYsBntApxUk" />
-
-    <script>window.archive_setup=[]</script>
-    <meta charset="UTF-8">
-    <script src="//archive.org/includes/jquery-1.10.2.min.js?v1.10.2" type="text/javascript"></script>
-            <script src="//archive.org/includes/analytics.js?v=66c8ecfe" type="text/javascript"></script>
-
-    <script>
-      'use strict';
-      if ('archive_analytics' in window) {
-                  archive_analytics.service = "ao_2";
-        
-        archive_analytics.send_pageview_on_load({
-                      mediaType: "texts",
-                  });
-
-        archive_analytics.process_url_events(window.location);
-      }
-    </script>
-        <script src="//archive.org/includes/build/npm/jquery-ui.min.js?v1.12.1" type="text/javascript"></script>
-    <script src="//archive.org/includes/bootstrap.min.js?v3.0.0" type="text/javascript"></script>
-    <script src="//archive.org/components/npm/clipboard/dist/clipboard.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/components/npm/@babel/polyfill/dist/polyfill.min.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/ie-dom-node-remove-polyfill.min.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/polyfill.min.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/components/npm/@webcomponents/webcomponentsjs/webcomponents-bundle.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/donation-banner.min.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/more-facets.min.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/npm/react/umd/react.production.min.js?v16.7.0" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/npm/react-dom/umd/react-dom.production.min.js?v16.7.0" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/archive.min.js?v=66c8ecfe" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/areact.min.js?v=66c8ecfe" type="text/javascript"></script>
-    <link href="//archive.org/includes/build/css/archive.min.css?v=66c8ecfe" rel="stylesheet" type="text/css"/>
-    <link rel="SHORTCUT ICON" href="https://archive.org/images/glogo.jpg"/>
-      </head>
-  <body class="navia ">
-    <a href="#maincontent" class="hidden-for-screen-readers">Skip to main content</a>
-
-    <!-- Wraps all page content -->
-    <div id="wrap"
-          >
-                    <div class="ia-banners">
-              <div class="ia-banner hidden" data-campaign="ia_user_1">
-        <p>This banner text <i>can</i> have <b>markup</b>.</p>
-        <a href="#" data-action="ia-banner-close"></a>
-      </div>
-          </div>
-            
-        <div id="navwrap1" class="">
-          <div id="navwrap2">
-            <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-              <div id="nav-tophat-helper" class="hidden-xs"></div>
-
-              <ul class="nav navbar-nav navbar-main">
-                <li class="pull-left">
-                  <a title="Home" class="navia-link home" href="/" target="_top">
-                    <span class="iconochive-logo"></span>
-                    <div class="archive-wordmark">
-                      <img src="https://archive.org/images/wordmark-narrow-spacing.svg" alt="Internet Archive Logo">
-                    </div>
-                  </a>
-                </li>
-                                                                      <li class="dropdown dropdown-ia pull-left">
-                    <a title="Web" class="navia-link web"
-                      data-top-kind="web"
-                      href="https://archive.org/web/"
-                      target="_top"><span class="iconochive-web" aria-hidden="true"></span><span>web</span></a>
-                  </li>
-                                                                      <li class="dropdown dropdown-ia pull-left">
-                    <a title="Texts" class="navia-link texts"
-                      data-top-kind="texts"
-                      href="https://archive.org/details/texts"
-                      target="_top"><span class="iconochive-texts" aria-hidden="true"></span><span>books</span></a>
-                  </li>
-                                                                      <li class="dropdown dropdown-ia pull-left">
-                    <a title="Video" class="navia-link movies"
-                      data-top-kind="movies"
-                      href="https://archive.org/details/movies"
-                      target="_top"><span class="iconochive-movies" aria-hidden="true"></span><span>video</span></a>
-                  </li>
-                                                                      <li class="dropdown dropdown-ia pull-left">
-                    <a title="Audio" class="navia-link audio"
-                      data-top-kind="audio"
-                      href="https://archive.org/details/audio"
-                      target="_top"><span class="iconochive-audio" aria-hidden="true"></span><span>audio</span></a>
-                  </li>
-                                                                      <li class="dropdown dropdown-ia pull-left">
-                    <a title="Software" class="navia-link software"
-                      data-top-kind="software"
-                      href="https://archive.org/details/software"
-                      target="_top"><span class="iconochive-software" aria-hidden="true"></span><span>software</span></a>
-                  </li>
-                                                                      <li class="dropdown dropdown-ia pull-left rightmost">
-                    <a title="Image" class="navia-link image"
-                      data-top-kind="image"
-                      href="https://archive.org/details/image"
-                      target="_top"><span class="iconochive-image" aria-hidden="true"></span><span>images</span></a>
-                  </li>
-                
-                <li class="nav-right-tool nav-hamburger pull-right hidden-sm hidden-md hidden-lg">
-                  <div class="container-fluid">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                              data-target="#nav-hamburger-menu" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                      <div class="navbar-collapse collapse" id="nav-hamburger-menu" aria-expanded="false">
-                            <ul id="" class="nav navbar-nav">
-            <li><a target="_top" data-event-click-tracking="TopNav|AboutLink" href="https://archive.org/about/">ABOUT</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|ContactLink" href="https://archive.org/about/contact.php">CONTACT</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|BlogLink" href="//blog.archive.org">BLOG</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|ProjectsLink" href="https://archive.org/projects">PROJECTS</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|HelpLink" href="https://archive.org/about/faqs.php">HELP</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|DonateLink" href="https://archive.org/donate">DONATE <span class="iconochive-heart"></span></a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|JobsLink" href="https://archive.org/about/jobs.php">JOBS</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|VolunteerLink" href="https://archive.org/about/volunteerpositions.php">VOLUNTEER</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|PeopleLink" href="https://archive.org/about/bios.php">PEOPLE</a></li>
-          </ul>
-                          </div><!-- /.navbar-collapse -->
-                    </div>
-                  </div><!-- /.container-fluid -->
-                </li>
-
-                                  <li class="nav-right-tool pull-right" id="nav-search" >
-                    <a class="nav-search-button" href="https://archive.org/search.php"
-                      onclick="$(this).parents('#nav-search').find('form').submit(); return false"
-                      aria-hidden="true"
-                    ><span class="iconochive-search"  aria-hidden="true"></span><span class="sr-only">search</span></a>
-                    <div class="searchbar">
-                      <form
-                        class="search-form js-search-form"
-                        method="get"
-                        role="search"
-                        action="https://archive.org/searchresults.php"
-                        target="_top"
-                        data-event-form-tracking="TopNav|SearchForm"
-                        data-wayback-machine-search-url="https://web.archive.org/web/*/"
-                      >
-                        <input
-                          id="search-bar-2"
-                          class="js-search-bar"
-                          data-autocomplete-format="right"
-                          placeholder="Search"
-                          type="text"
-                          name="search"
-                          value=""
-                          aria-controls="navbar_search_options"
-                          aria-label="Search the Archive. Filters and Advanced Search available below."
-                        />
-
-                              <div
-              id="navbar_search_options"
-            class="search-options js-search-options"
-      aria-expanded="false"
-      aria-label="Search Options"
-      data-keep-open-when-changed="false"
-    >
-      <div class="pre-search-options"></div>
-      <fieldset>
-                      <label>
-      <input
-        type="radio"
-        name="sin"
-        value=""
-                  checked
-                      >
-      <span>Search metadata</span>
-    </label>
-                          <label>
-      <input
-        type="radio"
-        name="sin"
-        value="TXT"
-                      >
-      <span>Search text contents</span>
-    </label>
-                          <label>
-      <input
-        type="radio"
-        name="sin"
-        value="TV"
-                      >
-      <span>Search TV news captions</span>
-    </label>
-                          <label>
-      <input
-        type="radio"
-        name="sin"
-        value="WEB"
-                      >
-      <span>Search archived web sites</span>
-    </label>
-                  </fieldset>
-
-              <a
-          href="https://archive.org/advancedsearch.php"
-          class="search-options__advanced-search-link"
-          onclick="return AJS.advanced_search(this)"
-        >Advanced Search</a>
-          </div>
-    
-                              <input class="js-tvsearch" type="hidden" value='{"ands":[],"minday":"06/04/2009","maxday":"12/13/2019"}'/>
-    
-                        <input type="submit" value="Search"/>
-                      </form>
-                    </div><!--/.searchbar -->
-                  </li>
-                
-                <li class="nav-right-tool pull-right">
-                  <a class="nav-upload" href="https://archive.org/create" _target="top"
-                    data-event-click-tracking="TopNav|UploadIcon"
-                  ><span class="iconochive-upload"  aria-hidden="true"></span><span class="sr-only">upload</span><span class="hidden-xs-span hidden-sm-span">UPLOAD</span></a>
-                </li>
-
-                <li class="nav-right-tool pull-right leftmost">
-                                      <a class="nav-user" href="https://archive.org/account/login" style="padding-right:0" _target="top"
-                      data-event-click-tracking="TopNav|LoginIcon"
-                      ><span class="iconochive-person"  aria-hidden="true"></span><span class="sr-only">person</span><span class="hidden-xs-span hidden-sm-span">SIGN IN</span></a>
-                                  </li>
-
-                              </ul>
-
-                  <ul id="nav-abouts" class="">
-            <li><a target="_top" data-event-click-tracking="TopNav|AboutLink" href="https://archive.org/about/">ABOUT</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|ContactLink" href="https://archive.org/about/contact.php">CONTACT</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|BlogLink" href="//blog.archive.org">BLOG</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|ProjectsLink" href="https://archive.org/projects">PROJECTS</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|HelpLink" href="https://archive.org/about/faqs.php">HELP</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|DonateLink" href="https://archive.org/donate">DONATE <span class="iconochive-heart"></span></a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|JobsLink" href="https://archive.org/about/jobs.php">JOBS</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|VolunteerLink" href="https://archive.org/about/volunteerpositions.php">VOLUNTEER</a></li>
-      <li><a target="_top" data-event-click-tracking="TopNav|PeopleLink" href="https://archive.org/about/bios.php">PEOPLE</a></li>
-          </ul>
-                </div><!--/.navbar-->
-
-                        <div id="nav-tophat" class="collapse">
-                                                                <div class="row toprow web" style="max-width:1000px;margin:auto;display:block;">
-                    <div class="col-xs-12">
-                      <div class="wayback-txt">
-                        Search the history of over 396 billion                        <a style="display:inline"
-                          data-event-click-tracking="TopNav|WaybackMachineStatsLink"
-                          href="https://blog.archive.org/2016/10/23/defining-web-pages-web-sites-and-web-captures/"
-                          >web pages</a> on the Internet.
-                      </div>
-                      <div class="roundbox7 wayback-main">
-                        <div class="row">
-                          <div class="col-sm-6" style="padding-left:0; padding-right:0;">
-                            <a style="padding-bottom:0"
-                              data-event-click-tracking="TopNav|WaybackMachineLogoLink"
-                              href="https://archive.org/web/"
-                              ><img src="https://archive.org/images/WaybackLogoSmall.png" alt="Wayback Machine"/></a>
-                          </div>
-                          <div class="col-sm-6" style="padding-top:13px;">
-                            <form style="position:relative;">
-                              <span class="iconochive-search"  aria-hidden="true"></span><span class="sr-only">search</span>                              <label for="nav-wb-url" class="sr-only">Search the Wayback Machine</label>
-                              <input id="nav-wb-url" class="form-control input-sm roundbox20" type="text"
-                                placeholder="enter URL or keywords" name="url" autocomplete="off"
-                                onclick="$(this).css('padding-left','').parent().find('.iconochive-search').hide()"/>
-                            </form>
-                          </div>
-                        </div><!--/.row-->
-                      </div><!--/.wayback-main-->
-                    </div>
-                  </div><!--./row-->
-
-                                                                                <div class="row toprow fivecolumns texts">
-
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-4">
-                                                  <div class="linx">
-                            <h5>Featured</h5>
-                                                        <a
-                              href="https://archive.org/details/books"
-                              data-event-click-tracking="TopNav|FeaturedLink-AllBooks"
-                              ><span class="iconochive-texts"  aria-hidden="true"></span><span class="sr-only">texts</span> All Books</a>
-                            <a
-                              href="https://archive.org/details/texts"
-                              data-event-click-tracking="TopNav|FeaturedLink-AllTexts"
-                              >All Texts</a>
-                                                        <a
-                              href="https://archive.org/search.php?query=mediatype:texts&sort=-publicdate"
-                              data-event-click-tracking="TopNav|FeaturedLink-ThisJustInTexts"
-                              ><span class="iconochive-latest"  aria-hidden="true"></span><span class="sr-only">latest</span> This Just In</a>
-                                                          <a href="https://archive.org/details/smithsonian" title="Smithsonian Libraries" data-event-click-tracking="TopNav|FeaturedLink-SmithsonianLibraries">Smithsonian Libraries</a>                                                          <a href="https://archive.org/details/fedlink" title="FEDLINK (US)" data-event-click-tracking="TopNav|FeaturedLink-FEDLINKUS">FEDLINK (US)</a>                                                          <a href="https://archive.org/details/genealogy" title="Genealogy" data-event-click-tracking="TopNav|FeaturedLink-Genealogy">Genealogy</a>                                                          <a href="https://archive.org/details/lincolncollection" title="Lincoln Collection" data-event-click-tracking="TopNav|FeaturedLink-LincolnCollection">Lincoln Collection</a>                                                      </div>
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-2">
-                                                  <div class="widgets">
-                                        <center class="items_list">
-              <div class="items_list_img">
-                <a
-                  href="https://archive.org/details/inlibrary?sort=-publicdate"
-                  style="background-image: url('https://archive.org/images/book-lend.png');"
-                  aria-hidden="true"
-                  data-event-click-tracking="TopNav|CircleWidget-BooksToBorrow"
-                  ></a>
-              </div>
-              <a
-                class="stealth boxy-label"
-                data-event-click-tracking="TopNav|CircleWidget-BooksToBorrow"
-                href="https://archive.org/details/inlibrary?sort=-publicdate"
-                >Books to Borrow</a>
-            </center>
-                                    </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-2">
-                                                  <div class="linx ">
-                                                          <h5>Top</h5>
-                                                                                      <a href="https://archive.org/details/americana" title="American Libraries" data-event-click-tracking="TopNav|TopLink-AmericanLibraries">American Libraries</a>                                                          <a href="https://archive.org/details/toronto" title="Canadian Libraries" data-event-click-tracking="TopNav|TopLink-CanadianLibraries">Canadian Libraries</a>                                                          <a href="https://archive.org/details/universallibrary" title="Universal Library" data-event-click-tracking="TopNav|TopLink-UniversalLibrary">Universal Library</a>                                                          <a href="https://archive.org/details/opensource" title="Community Texts" data-event-click-tracking="TopNav|TopLink-CommunityTexts">Community Texts</a>                                                          <a href="https://archive.org/details/gutenberg" title="Project Gutenberg" data-event-click-tracking="TopNav|TopLink-ProjectGutenberg">Project Gutenberg</a>                                                          <a href="https://archive.org/details/biodiversity" title="Biodiversity Heritage Library" data-event-click-tracking="TopNav|TopLink-BiodiversityHeritageLibrary">Biodiversity Heritage Library</a>                                                          <a href="https://archive.org/details/iacl" title="Children's Library" data-event-click-tracking="TopNav|TopLink-ChildrenSLibrary">Children's Library</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-4">
-                                                  <div class="widgets">
-                                        <center class="items_list">
-              <div class="items_list_img">
-                <a
-                  href="https://openlibrary.org"
-                  style="background-image: url('https://archive.org/images/widgetOL.png');"
-                  aria-hidden="true"
-                  data-event-click-tracking="TopNav|CircleWidget-OpenLibrary"
-                  ></a>
-              </div>
-              <a
-                class="stealth boxy-label"
-                data-event-click-tracking="TopNav|CircleWidget-OpenLibrary"
-                href="https://openlibrary.org"
-                >Open Library</a>
-            </center>
-                                    </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7">
-                                                  <div class="linx linx-topped">
-                                                                                      <a href="https://archive.org/details/booksbylanguage" title="Books by Language" data-event-click-tracking="TopNav|TopLink-BooksByLanguage">Books by Language</a>                                                          <a href="https://archive.org/details/additional_collections" title="Additional Collections" data-event-click-tracking="TopNav|TopLink-AdditionalCollections">Additional Collections</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                    
-                  </div><!--/.row-->
-                                                                                <div class="row toprow fivecolumns movies">
-
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-4">
-                                                  <div class="linx">
-                            <h5>Featured</h5>
-                                                        <a
-                              href="https://archive.org/details/movies"
-                              data-event-click-tracking="TopNav|FeaturedLink-AllVideo"
-                              ><span class="iconochive-movies"  aria-hidden="true"></span><span class="sr-only">movies</span> All video</a>
-                                                        <a
-                              href="https://archive.org/search.php?query=mediatype:movies&sort=-publicdate"
-                              data-event-click-tracking="TopNav|FeaturedLink-ThisJustInVideo"
-                              ><span class="iconochive-latest"  aria-hidden="true"></span><span class="sr-only">latest</span> This Just In</a>
-                                                          <a href="https://archive.org/details/prelinger" title="Prelinger Archives" data-event-click-tracking="TopNav|FeaturedLink-PrelingerArchives">Prelinger Archives</a>                                                          <a href="https://archive.org/details/democracy_now_vid" title="Democracy Now!" data-event-click-tracking="TopNav|FeaturedLink-DemocracyNow">Democracy Now!</a>                                                          <a href="https://archive.org/details/occupywallstreet" title="Occupy Wall Street" data-event-click-tracking="TopNav|FeaturedLink-OccupyWallStreet">Occupy Wall Street</a>                                                          <a href="https://archive.org/details/nsa" title="TV NSA Clip Library" data-event-click-tracking="TopNav|FeaturedLink-TVNSAClipLibrary">TV NSA Clip Library</a>                                                      </div>
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-2">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/tv"
-            style="background-image: url('https://archive.org/services/img/tv');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/tv">TV News</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-2">
-                                                  <div class="linx ">
-                                                          <h5>Top</h5>
-                                                                                      <a href="https://archive.org/details/animationandcartoons" title="Animation &amp; Cartoons" data-event-click-tracking="TopNav|TopLink-AnimationCartoons">Animation & Cartoons</a>                                                          <a href="https://archive.org/details/artsandmusicvideos" title="Arts &amp; Music" data-event-click-tracking="TopNav|TopLink-ArtsMusic">Arts & Music</a>                                                          <a href="https://archive.org/details/computersandtechvideos" title="Computers &amp; Technology" data-event-click-tracking="TopNav|TopLink-ComputersTechnology">Computers & Technology</a>                                                          <a href="https://archive.org/details/culturalandacademicfilms" title="Cultural &amp; Academic Films" data-event-click-tracking="TopNav|TopLink-CulturalAcademicFilms">Cultural & Academic Films</a>                                                          <a href="https://archive.org/details/ephemera" title="Ephemeral Films" data-event-click-tracking="TopNav|TopLink-EphemeralFilms">Ephemeral Films</a>                                                          <a href="https://archive.org/details/moviesandfilms" title="Movies" data-event-click-tracking="TopNav|TopLink-Movies">Movies</a>                                                          <a href="https://archive.org/details/newsandpublicaffairs" title="News &amp; Public Affairs" data-event-click-tracking="TopNav|TopLink-NewsPublicAffairs">News & Public Affairs</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-4">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/911"
-            style="background-image: url('https://archive.org/services/img/911');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/911">Understanding 9/11</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7">
-                                                  <div class="linx linx-topped">
-                                                                                      <a href="https://archive.org/details/spiritualityandreligion" title="Spirituality &amp; Religion" data-event-click-tracking="TopNav|TopLink-SpiritualityReligion">Spirituality & Religion</a>                                                          <a href="https://archive.org/details/sports" title="Sports Videos" data-event-click-tracking="TopNav|TopLink-SportsVideos">Sports Videos</a>                                                          <a href="https://archive.org/details/television" title="Television" data-event-click-tracking="TopNav|TopLink-Television">Television</a>                                                          <a href="https://archive.org/details/gamevideos" title="Videogame Videos" data-event-click-tracking="TopNav|TopLink-VideogameVideos">Videogame Videos</a>                                                          <a href="https://archive.org/details/vlogs" title="Vlogs" data-event-click-tracking="TopNav|TopLink-Vlogs">Vlogs</a>                                                          <a href="https://archive.org/details/youth_media" title="Youth Media" data-event-click-tracking="TopNav|TopLink-YouthMedia">Youth Media</a>                                                          <a href="https://archive.org/details/additional_collections_video" title="Additional Collections - Video" data-event-click-tracking="TopNav|TopLink-AdditionalCollectionsVideo">Additional Collections - Video</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                    
-                  </div><!--/.row-->
-                                                                                <div class="row toprow fivecolumns audio">
-
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-4">
-                                                  <div class="linx">
-                            <h5>Featured</h5>
-                                                        <a
-                              href="https://archive.org/details/audio"
-                              data-event-click-tracking="TopNav|FeaturedLink-AllAudio"
-                              ><span class="iconochive-audio"  aria-hidden="true"></span><span class="sr-only">audio</span> All audio</a>
-                                                        <a
-                              href="https://archive.org/search.php?query=mediatype:audio&sort=-publicdate"
-                              data-event-click-tracking="TopNav|FeaturedLink-ThisJustInAudio"
-                              ><span class="iconochive-latest"  aria-hidden="true"></span><span class="sr-only">latest</span> This Just In</a>
-                                                          <a href="https://archive.org/details/GratefulDead" title="Grateful Dead" data-event-click-tracking="TopNav|FeaturedLink-GratefulDead">Grateful Dead</a>                                                          <a href="https://archive.org/details/netlabels" title="Netlabels" data-event-click-tracking="TopNav|FeaturedLink-Netlabels">Netlabels</a>                                                          <a href="https://archive.org/details/oldtimeradio" title="Old Time Radio" data-event-click-tracking="TopNav|FeaturedLink-OldTimeRadio">Old Time Radio</a>                                                          <a href="https://archive.org/details/78rpm" title="78 RPMs and Cylinder Recordings" data-event-click-tracking="TopNav|FeaturedLink-78RPMsAndCylinderRecordings">78 RPMs and Cylinder Recordings</a>                                                      </div>
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-2">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/etree"
-            style="background-image: url('https://archive.org/services/img/etree');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/etree">Live Music Archive</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-2">
-                                                  <div class="linx ">
-                                                          <h5>Top</h5>
-                                                                                      <a href="https://archive.org/details/audio_bookspoetry" title="Audio Books &amp; Poetry" data-event-click-tracking="TopNav|TopLink-AudioBooksPoetry">Audio Books & Poetry</a>                                                          <a href="https://archive.org/details/opensource_audio" title="Community Audio" data-event-click-tracking="TopNav|TopLink-CommunityAudio">Community Audio</a>                                                          <a href="https://archive.org/details/audio_tech" title="Computers &amp; Technology" data-event-click-tracking="TopNav|TopLink-ComputersTechnology">Computers & Technology</a>                                                          <a href="https://archive.org/details/audio_music" title="Music, Arts &amp; Culture" data-event-click-tracking="TopNav|TopLink-MusicArtsCulture">Music, Arts & Culture</a>                                                          <a href="https://archive.org/details/audio_news" title="News &amp; Public Affairs" data-event-click-tracking="TopNav|TopLink-NewsPublicAffairs">News & Public Affairs</a>                                                          <a href="https://archive.org/details/audio_foreign" title="Non-English Audio" data-event-click-tracking="TopNav|TopLink-NonEnglishAudio">Non-English Audio</a>                                                          <a href="https://archive.org/details/radioprograms" title="Radio Programs" data-event-click-tracking="TopNav|TopLink-RadioPrograms">Radio Programs</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-4">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/librivoxaudio"
-            style="background-image: url('https://archive.org/services/img/librivoxaudio');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/librivoxaudio">Librivox Free Audiobook</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7">
-                                                  <div class="linx linx-topped">
-                                                                                      <a href="https://archive.org/details/audio_religion" title="Spirituality &amp; Religion" data-event-click-tracking="TopNav|TopLink-SpiritualityReligion">Spirituality & Religion</a>                                                          <a href="https://archive.org/details/podcasts" title="Podcasts" data-event-click-tracking="TopNav|TopLink-Podcasts">Podcasts</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                    
-                  </div><!--/.row-->
-                                                                                <div class="row toprow fivecolumns software">
-
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-4">
-                                                  <div class="linx">
-                            <h5>Featured</h5>
-                                                        <a
-                              href="https://archive.org/details/software"
-                              data-event-click-tracking="TopNav|FeaturedLink-AllSoftware"
-                              ><span class="iconochive-software"  aria-hidden="true"></span><span class="sr-only">software</span> All software</a>
-                                                        <a
-                              href="https://archive.org/search.php?query=mediatype:software&sort=-publicdate"
-                              data-event-click-tracking="TopNav|FeaturedLink-ThisJustInSoftware"
-                              ><span class="iconochive-latest"  aria-hidden="true"></span><span class="sr-only">latest</span> This Just In</a>
-                                                          <a href="https://archive.org/details/tosec" title="Old School Emulation" data-event-click-tracking="TopNav|FeaturedLink-OldSchoolEmulation">Old School Emulation</a>                                                          <a href="https://archive.org/details/softwarelibrary_msdos_games" title="MS-DOS Games" data-event-click-tracking="TopNav|FeaturedLink-MSDOSGames">MS-DOS Games</a>                                                          <a href="https://archive.org/details/historicalsoftware" title="Historical Software" data-event-click-tracking="TopNav|FeaturedLink-HistoricalSoftware">Historical Software</a>                                                          <a href="https://archive.org/details/classicpcgames" title="Classic PC Games" data-event-click-tracking="TopNav|FeaturedLink-ClassicPCGames">Classic PC Games</a>                                                          <a href="https://archive.org/details/softwarelibrary" title="Software Library" data-event-click-tracking="TopNav|FeaturedLink-SoftwareLibrary">Software Library</a>                                                      </div>
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-2">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/internetarcade"
-            style="background-image: url('https://archive.org/services/img/internetarcade');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/internetarcade">Internet Arcade</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-2">
-                                                  <div class="linx ">
-                                                          <h5>Top</h5>
-                                                                                      <a href="https://archive.org/details/kodi_archive" title="Kodi Archive and Support File" data-event-click-tracking="TopNav|TopLink-KodiArchiveAndSupportFile">Kodi Archive and Support File</a>                                                          <a href="https://archive.org/details/open_source_software" title="Community Software" data-event-click-tracking="TopNav|TopLink-CommunitySoftware">Community Software</a>                                                          <a href="https://archive.org/details/softwarelibrary_msdos" title="MS-DOS" data-event-click-tracking="TopNav|TopLink-MSDOS">MS-DOS</a>                                                          <a href="https://archive.org/details/vintagesoftware" title="Vintage Software" data-event-click-tracking="TopNav|TopLink-VintageSoftware">Vintage Software</a>                                                          <a href="https://archive.org/details/apkarchive" title="APK" data-event-click-tracking="TopNav|TopLink-APK">APK</a>                                                          <a href="https://archive.org/details/cd-roms" title="CD-ROM Software" data-event-click-tracking="TopNav|TopLink-CDROMSoftware">CD-ROM Software</a>                                                          <a href="https://archive.org/details/cdromsoftware" title="CD-ROM Software Library" data-event-click-tracking="TopNav|TopLink-CDROMSoftwareLibrary">CD-ROM Software Library</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-4">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/consolelivingroom"
-            style="background-image: url('https://archive.org/services/img/consolelivingroom');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/consolelivingroom">Console Living Room</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7">
-                                                  <div class="linx linx-topped">
-                                                                                      <a href="https://archive.org/details/softwaresites" title="Software Sites" data-event-click-tracking="TopNav|TopLink-SoftwareSites">Software Sites</a>                                                          <a href="https://archive.org/details/tucows" title="Tucows Software Library" data-event-click-tracking="TopNav|TopLink-TucowsSoftwareLibrary">Tucows Software Library</a>                                                          <a href="https://archive.org/details/cdbbsarchive" title="Shareware CD-ROMs" data-event-click-tracking="TopNav|TopLink-SharewareCDROMs">Shareware CD-ROMs</a>                                                          <a href="https://archive.org/details/softwarelibrary_zx_spectrum" title="ZX Spectrum" data-event-click-tracking="TopNav|TopLink-ZXSpectrum">ZX Spectrum</a>                                                          <a href="https://archive.org/details/cdromimages" title="CD-ROM Images" data-event-click-tracking="TopNav|TopLink-CDROMImages">CD-ROM Images</a>                                                          <a href="https://archive.org/details/doom-cds" title="DOOM Level CD" data-event-click-tracking="TopNav|TopLink-DOOMLevelCD">DOOM Level CD</a>                                                          <a href="https://archive.org/details/zx_spectrum_library_games" title="ZX Spectrum Library: Games" data-event-click-tracking="TopNav|TopLink-ZXSpectrumLibraryGames">ZX Spectrum Library: Games</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                    
-                  </div><!--/.row-->
-                                                                                <div class="row toprow fivecolumns image">
-
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-4">
-                                                  <div class="linx">
-                            <h5>Featured</h5>
-                                                        <a
-                              href="https://archive.org/details/image"
-                              data-event-click-tracking="TopNav|FeaturedLink-AllImage"
-                              ><span class="iconochive-image"  aria-hidden="true"></span><span class="sr-only">image</span> All images</a>
-                                                        <a
-                              href="https://archive.org/search.php?query=mediatype:image&sort=-publicdate"
-                              data-event-click-tracking="TopNav|FeaturedLink-ThisJustInImage"
-                              ><span class="iconochive-latest"  aria-hidden="true"></span><span class="sr-only">latest</span> This Just In</a>
-                                                          <a href="https://archive.org/details/flickrcommons" title="Flickr Commons" data-event-click-tracking="TopNav|FeaturedLink-FlickrCommons">Flickr Commons</a>                                                          <a href="https://archive.org/details/flickr-ows" title="Occupy Wall Street Flickr" data-event-click-tracking="TopNav|FeaturedLink-OccupyWallStreetFlickr">Occupy Wall Street Flickr</a>                                                          <a href="https://archive.org/details/coverartarchive" title="Cover Art" data-event-click-tracking="TopNav|FeaturedLink-CoverArt">Cover Art</a>                                                          <a href="https://archive.org/details/maps_usgs" title="USGS Maps" data-event-click-tracking="TopNav|FeaturedLink-USGSMaps">USGS Maps</a>                                                      </div>
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-2">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/metropolitanmuseumofart-gallery"
-            style="background-image: url('https://archive.org/services/img/metropolitanmuseumofart-gallery');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/metropolitanmuseumofart-gallery">Metropolitan Museum</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7 col-sm-push-2">
-                                                  <div class="linx ">
-                                                          <h5>Top</h5>
-                                                                                      <a href="https://archive.org/details/nasa" data-event-click-tracking="TopNav|TopLink-NASAImages">NASA Images</a>                                                          <a href="https://archive.org/details/solarsystemcollection" data-event-click-tracking="TopNav|TopLink-SolarSystemCollection">Solar System Collection</a>                                                          <a href="https://archive.org/details/amesresearchcenterimagelibrary" data-event-click-tracking="TopNav|TopLink-AmesResearchCenter">Ames Research Center</a>                                                      </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-5 col-sm-pull-4">
-                                                  <div class="widgets">
-                            <center class="items_list">        <div class="items_list_img">
-          <a
-            href="https://archive.org/details/brooklynmuseum"
-            style="background-image: url('https://archive.org/services/img/brooklynmuseum');"
-            aria-hidden="true"
-            data-event-click-tracking="ItemList|ItemListLink"
-          ></a>
-        </div>
-        <a class="stealth boxy-label" data-event-click-tracking="ItemList|ItemListLink" href="https://archive.org/details/brooklynmuseum">Brooklyn Museum</a></center>                          </div><!--/.widgets-->
-
-                                              </div><!--/.col-sm-2-->
-                                                                <div class="col-sm-2 col-xs-7">
-                                                  <div class="linx linx-topped">
-                                                                                  </div>
-
-                          
-                                              </div><!--/.col-sm-2-->
-                    
-                  </div><!--/.row-->
-                                          </div><!--/#nav-tophat-->
-    
-          </div><!--#navwrap1-->
-        </div><!--#navwrap2-->
-
-        <!-- Begin page content -->
-        <main id="maincontent">
-          <div class="container container-ia">
-
-                  <h1>
-          Full text of "<a href="/details/oldmansea00hemi_1">The Old Man and the Sea</a>"
-        </h1>
-        <h2 class="pull-right">
-          <small><a href="/details/oldmansea00hemi_1">See other formats</a></small>
-        </h2>
-        <br class="clearfix" clear="right"/>
-      <pre>
-0jc ITOIS 
-
-
-
-Books by Ernest Hemingway 
-
-
-ISLANDS IN THE STREAM 
-THE FIFTH COLUMN AND FOUR STORIES 
-OF THE SPANISH CIVIL WAR 
-by-line: ERNEST HEMINGWAY 
-A MOVEABLE FEAST 
-THE HEMINGWAY READER 
-THE OLD MAN AND THE SEA 
-ACROSS THE RIVER AND INTO THE TREES 
-FOR WHOM THE BELL TOLLS 
-THE SHORT STORIES OF ERNEST HEMINGWAY 
-THE FIFTH COLUMN 
-TO HAVE AND HAVE NOT 
-GREEN HILLS OF AFRICA 
-WINNER TAKE NOTHING 
-DEATH IN THE AFTERNOON 
-IN OUR TIME 
-A FAREWELL TO ARMS 
-MEN WITHOUT WOMEN 
-THE SUN ALSO RISES 
-THE TORRENTS OF SPRING 
-
-
-THE OLD MAN AND THE SEA 
-
-
-
-ERNEST HEMINGWAY 
-
-
-THE OLD MAN 
-AND THE SEA 
-
-
-CHARLES SCRIBNER’S SONS, NEW YORK 
-
-
-Copyright 1952 Ernest Hemingway 
-
-This hook is also protected under the Berne Convention 
-
-
-ALL RIGHTS RESERVED. NO PART OF THIS BOOK 
-MAY BE REPRODUCED IN ANY FORM WITHOUT 
-THE PERMISSION OF CHARLES SCRIBNEr’s SONS. 
-
-
-SEN 684-71805-7 
-
-
-Printed in the United States of America 
-
-
-TO CHARLIE SCRIBNER 
-AND 
-
-TO MAX PERKINS 
-
-
-
-2864658 
-
-
-Digitized by the Internet Archive 
-in 2017 with funding from 
-University of Alberta Libraries 
-
-
-https://archive.org/details/oldmansea00hemi_1 
-
-
 H e was an old man who fished alone in a skiff in 
 the Guff Stream and he had gone eighty-four days now 
 without taking a fish. In the first forty days a boy had 
@@ -688,65 +12,39 @@ help him carry either the coiled lines or the gaff and
 harpoon and the sail that was furled around the mast. 
 The sail was patched with flour sacks and, furled, it 
 looked like the flag of permanent defeat. 
-
 The old man was thin and gaunt with deep wrinkles 
 in the back of his neck. The brown blotches of the 
 benevolent skin cancer the sun brings from its 
-
-
-9 
-
-
-The Old Man and the Sea 
-
-
 reflection on the tropic sea were on his cheeks. The 
 blotches ran well down the sides of his face and his 
 hands had the deep-creased scars from handling heavy 
 fish on the cords. But none of these scars were fresh. 
 They were as old as erosions in a fishless desert. 
-
 Everything about him was old except his eyes and 
 they were the same color as the sea and were cheerful 
 and undefeated. 
-
 “Santiago,” the boy said to him as they climbed the 
 bank from where the skiff was hauled up. “I could go 
 with you again. We’ve made some money.” 
-
 The old man had taught the boy to fish and the boy 
 loved him. 
-
 “No,” the old man said. “You’re with a lucky boat. 
 Stay with them!” 
-
 “But remember how you went eighty-seven days 
 without fish and then we caught big ones every day for 
 three weeks.” 
-
 “I remember,” the old man said. “I know you did 
 not leave me because you doubted.” 
-
 “It was papa made me leave. I am a boy and I must 
 obey him.” 
-
 “I know,” the old man said. “It is quite normal.” 
-
 “He hasn’t much faith.” 
-
 lo 
-
-
-The Old Man and the Sea 
-
 “No,” the old man said. “But we have. Haven’t 
 we?” 
-
 “Yes,” the boy said. “Can I offer you a beer on the 
 Terrace and then we’ll take the stuff home.” 
-
 “Why not?” the old man said. “Between fishermen.” 
-
 They sat on the Terrace and many of the fishermen 
 made fun of the old man and he was not angry. 
 Others, of the older fishermen, looked at him and were 
@@ -764,139 +62,79 @@ other side of the cove where they were hoisted on a
 block and tackle, their livers removed, their fins cut off 
 and their hides skinned out and their flesh cut into 
 strips for salting. 
-
 When the wind was in the east a smell came across 
 the harbour from the shark factory; but today there 
-
-1 1 
-
-
-The Old Man and the Sea 
-
 was only the faint edge of the odour because the wind 
 had backed into the north and then dropped oft' and it 
 was pleasant and sunny on the Terrace. 
-
 “Santiago,” the boy said. 
-
 “Yes,” the old man said. He was holding his glass 
 and thinking of many years ago. 
-
 “Can I go out to get sardines for you for tomorrow^” 
-
 “No. Go and play baseball. I can still row and Ro- 
 gelio will throw the net.” 
-
 “I would like to go. If I cannot fish with you, I 
 would like to serve in some way.” 
-
 “You bought me a beer,” the old man said. “You are 
 already a man.” 
-
 “How old was I when you first took me in a boat?” 
-
 “Five and you nearly were killed when I brought the 
 fish in too green and he nearly tore the boat to pieces. 
 Can you rem-ember?” 
-
 “I can remember the tail slapping and banging and 
 the thwart breaking and the noise of the clubbing. I 
 can remember you throwing me into the bow where 
 the wet coiled lines were and feeling the whole boat 
 shiver and the noise of you clubbing him like chopping 
 a tree down and the sweet blood smell all over me.” 
-
-
-12 
-
-
-The Old Man and the Sea 
-
 “Can you really remember that or did I just tell it to 
 you?” 
-
 “I remember everything from when we first went to- 
 gether.” 
-
 The old man looked at him with his sun-burned, 
 confident loving eyes. 
-
 “If you were my boy I’d take you out and gamble,” 
 he said. “But you are your father’s and your mother’s 
 and you are in a lucky boat.” 
-
 “May I get the sardines? I know where I can get 
 four baits too.” 
-
 “I have mine left from today. I put them in salt in 
 the box.” 
-
 “Let me get four fresh ones.” 
-
 “One,” the old man said. His hope and his 
 confidence had never gone. But now they were freshen- 
 ing as when the breeze rises. 
-
 ‘Two,” the boy said. 
-
 “Two,” the old man agreed. “You didn’t steal 
 them?” 
-
 “I would,” the boy said. “But I bought these.” 
-
 “Thank you,” the old man said. He was too simple 
 to wonder when he had attained humility. But he 
-
-
-3 
-
-
-The Old Man and the Sea 
-
 knew he had attained it and he knew it was not dis- 
 graceful and it carried no loss of true pride. 
-
 “Tomorrow is going to be a good day with this cur- 
 rent,” he said. 
-
 “Where are you going?” the boy asked. 
-
 “Far out to come in when the wind shifts. I want to 
 be out before it is light.” 
-
 “Ill try to get him to work far out,” the boy said. 
 “Then if you hook something truly big we can come to 
 your aid.” 
-
 “He does not like to work too far out.” 
-
 “No,” the boy said. “But I will see something that 
 he cannot see such as a bird working and get him to 
 come out after dolphin.” 
-
 “Are his eyes that bad?” 
-
 “He is almost blind.” 
-
 “It is strange,” the old man said. “He never went 
 turtle-ing. That is what kills the eyes.” 
-
 “But you went turtle-ing for years off the Mosquito 
 Coast and your eyes are good.” 
-
 “I am a strange old man.” 
-
 “But are you strong enough now for a truly big 
 hsh?” 
-
-“I think so. And there are many tricks.” 
-
-
-The Old Man and the Sea 
-
 “Let us take the stuff home,” the hoy said. “So I can 
 get the cast net and go after the sardines.” 
-
 They picked up the gear from the boat. The old 
 man carried the mast on his shoulder and the boy car- 
 ried the wooden box; with the coiled, hard-braided 
@@ -909,7 +147,6 @@ and the heavy lines home as the dew was bad for them
 and, though he was quite sure no local people would 
 steal from him, the old man thought that a gaff and a 
 harpoon were needless temptations to leave in a boat. 
-
 They walked up the road together to the old man’s 
 shack and went in through its open door. The old man 
 leaned the mast with its wrapped sail against the wall 
@@ -920,13 +157,6 @@ the royal palm which are called guano and in it there
 was a bed, a table, one chair, and a place on the dirt 
 floor to cook with charcoal. On the brown walls of the 
 flattened, overlapping leaves of the sturdy fibered 
-
-
-15 
-
-
-The Old Man and the Sea 
-
 guano there was a picture in color of the Sacred Heart 
 of Jesus and another of the Virgin of Cobre. These 
 were relics of his wife. Once there had been a 
@@ -934,103 +164,61 @@ tinted photograph of his wife on the wall but he had
 talcen it down because it made him too lonely to see 
 it and it was on the shelf in the corner under his clean 
 shirt. 
-
 “What do you have to eat?” the boy asked. 
-
 “A pot of yellow rice with fish. Do you want some?” 
-
 “No. I will eat at home. Do you want me to make 
 the fire?” 
-
 “No. I will make it later on. Or I may eat the rice 
 cold.” 
-
 “May I take the cast net?” 
-
 “Of course.” 
-
 There was no cast net and the boy remembered 
 when they had sold it. But they went through this 
 fiction every day. There was no pot of yellow rice and 
 fish and the boy knew this too. 
-
 “Eighty-five is a lucky number,” the old man said. 
 “How would you like to see me bring one in that 
 dressed out over a thousand pounds?” 
-
 “Ell get the cast net and go for sardines. Will you sit 
 in the sun in the doorway?” 
-
-
-i6 
-
-
-The Old Man and the Sea 
-
 “Yes. I have yesterday’s paper and I will read the 
 baseball.” 
-
 The boy did not know whether yesterday’s paper 
 was a fiction too. But the old man brought it out from 
 under the bed. 
-
 “Perico gave it to me at the hodega,” he explained. 
-
 “I’ll he back when I have the sardines. I’ll keep 
 yours and mine together on ice and we can share them 
 in the morning. When I come back you can tell me 
 about the baseball.” 
-
 “The Yankees cannot lose.” 
-
 “But I fear the Indians of Cleveland.” 
-
 “Have faith in the Yankees my son. Think of the 
 great DiMaggio.” 
-
 “I fear both the Tigers of Detroit and the Indians of 
 Cleveland.” 
-
 “Be careful or you will fear even the Reds of Cincin- 
 nati and the White Sox of Chicago.” 
-
 “You study it and tell me when I come back.” 
-
 “Do you think we should buy a terminal of the lot- 
 tery with an eighty-five? Tomorrow is the eighty-fifth 
 day.” 
-
 “We can do that,” the boy said. “But what about the 
 eighty-seven of your great record?” 
-
-
-17 
-
-
-The Old Man and the Sea 
-
 “It could not happen twice. Do you think you can 
 find an eighty-five?” 
-
 “I can order one.” 
-
 “One sheet. That’s two dollars and a half. Who can 
 we borrow that from?” 
-
 “That’s easy. I can always borrow two dollars and a 
 half.” 
-
 “I think perhaps I can too. But I try not to borrow. 
 First you borrow. Then you beg.” 
-
 “Keep warm old man,” the boy said. “Remember we 
 are in September.” 
-
 “The month when the great fish come,” the old man 
 said. “Anyone can be a fisherman in May.” 
-
 “I go now for the sardines,” the boy said. 
-
 When the hoy came back the old man was asleep in 
 the chair and the sun was down. The boy took the old 
 army blanket off the bed and spread it over the back of 
@@ -1041,266 +229,152 @@ show so much when the old man was asleep and his
 head fallen forward. His shirt had been patched so 
 many times that it was like the sail and the patches 
 were faded to many different shades by the sun. The 
-
-
-i8 
-
-
-The Old Man and the Sea 
-
-
 old man’s head was very old though and with his eyes 
 closed there was no life in his face. The newspaper lay 
 across his knees and the weight of his arm held it there 
 in the evening breeze. He was barefooted. 
-
 The boy left him there and when he came back the 
 old man was still asleep. 
-
 ‘Wake up old man,” the boy said and put his hand 
 on one of the old man’s knees. 
-
 The old man opened his eyes and for a moment he 
 was coming back from a long way away. Then he 
 smiled. 
-
 “What have you got?” he asked. 
-
 “Supper,” said the boy. “We’re going to have sup- 
 per.” 
-
 “I’m not very hungry.” 
-
 “Come on and eat. You can’t fish and not eat.” 
-
 “I have,” the old man said getting up and taking the 
 newspaper and folding it. Then he started to fold the 
 blanket. 
-
 “Keep the blanket around you,” the boy said. 
 “You’ll not fish without eating while I’m alive.” 
-
 “Then live a long time and take care of yourself,” 
 the old man said. “What are we eating?” 
-
 “Black beans and rice, fried bananas, and some 
 stew. 
-
-
-19 
-
-
-The Old Man and the Sea 
-
-
 The hoy had brought them in a two-decker metal 
 container from the Terrace. The two sets of knives and 
 forks and spoons were in his pocket with a paper nap- 
 kin wrapped around each set. 
-
 ‘'Who gave this to you?” 
-
 “Martin. The owner.” 
-
 “I must thank him.” 
-
 “I thanked him already,” the boy said. “You don’t 
 need to thank him.” 
-
 “I’ll give him the belly meat of a big fish,” the old 
 man said. “Has he done this for us more than once?” 
-
 “I think so.” 
-
 “I must give him something more than the helly 
 meat then. He is very thoughtful for us.” 
-
 “He sent two beers.” 
-
 “I like the beer in cans best.” 
-
 “I know. But this is in bottles, Hatuey beer, and I 
 take back the bottles.” 
-
 “That’s very kind of you,” the old man said. 
 “Should we eat?” 
-
 “I’ve been asking you to,” the boy told him gently. 
 “I have not wished to open the container until you 
 were ready.” 
-
-
-20 
-
-
-The Old Man and the Sea 
-
 “I’m ready now,” the old man said. “I only needed 
 time to wash.” 
-
 Where did you wash? the boy thought. The village 
 water supply was two streets down the road. I must 
 have water here for him, the boy thought, and soap 
 and a good towel. Why am I so thoughtless? I must get 
 him another shirt and a jacket for the winter and some 
 sort of shoes and another blanket. 
-
 “Your stew is excellent,” the old man said. 
-
 “Tell me about the baseball,” the boy asked him. 
-
 “In the American League it is the Yankees as I 
 said,” the old man said happily. 
-
 “They lost today,” the boy told him. 
-
 “That means nothing. The great DiMaggio is him- 
 self again.” 
-
 “They have other men on the team.” 
-
 “Naturally. But he makes the difFerence. In the 
 other league, between Brooklyn and Philadelphia I 
 must take Brooklyn. But then I think of Dick Sisler 
 and those great drives in the old park.” 
-
 “There was nothing ever like them. He hits the long- 
 est ball I have ever seen.” 
-
 “Do you remember when he used to come to the Ter- 
-
-
-21 
-
-
-The Old Man and the Sea 
-
 race? I wanted to take him fishing but I was too timid 
 to ask him. Then I asked you to ask him and you were 
 too timid.” 
-
 “I know. It was a great mistake. He might have 
 gone with us. Then we would have that for all of our 
 lives.” 
-
 “I would like to take the great DiMaggio fishing,” 
 the old man said. “They s.ay his father was a fisher- 
 man. Maybe he was as poor as we are and would 
 understand.” 
-
 “The great Sisler’s father was never poor and he, the 
 father, was playing in the Big Leagues when he was my 
 age. 
-
 “When I was your age I was before the mast on a 
 square rigged ship that ran to Africa and I have seen 
 lions on the beaches in the evening.” 
-
 “I know. You told me.” 
-
 “Should we talk about Africa or about baseball?” 
-
 “Baseball I think,” the boy said. “Tell me about the 
 great John ]. McGraw.” He said Jota for J. 
-
 “He used to come to the Terrace sometimes too in 
 the older days. But he was rough and harsh-spoken and 
 difficult when he was drinking. His mind was on 
 horses as well as baseball. At least he carried lists of 
-
-
-22 
-
-
-The Old Man and the Sea 
-
 horses at all times in his pocket and frequently spoke 
 the names of horses on the telephone/’ 
-
 “He was a great manager,” the boy said. “My father 
 thinks he was the greatest.” 
-
 “Because he came here the most times,” the old man 
 said. “If Durocher had continued to come here each 
 year your father would think him the greatest man- 
 ager.” 
-
 “Who is the greatest manager, really, Luque or Mike 
 Gonzalezl^” 
-
 “I think they are equal.” 
-
 “And the best fisherman is you.” 
-
 “No. I know others better.” 
-
 '‘Que va,” the boy said. “There are many good fisher- 
 men and some great ones. But there is only you.” 
-
 “Thank you. You make me happy. I hope no fish 
 will come along so great that he will prove us wrong.” 
-
 “There is no such fish if you are still strong as you 
 say.” 
-
 “I may not be as strong as I think,” the old man 
 said. “But I know many tricks and I have resolution.” 
-
 “You ought to go to bed now so that you will be 
 fresh in the morning. I will take the things back to the 
 Terrace.” 
-
-
-23 
-
-
-The Old Man and the Sea 
-
 “Good night then. I will wake you in the morning.’’ 
-
 “You’re my alarm clock,” the boy said. 
-
 “Age is my alarm clock,” the old man said. “Why do 
 old men wake so early? Is it to have one longer day?” 
-
 “I don’t know,” the boy said. “All I know is that 
 young boys sleep late and hard.” 
-
 “I can remember it,” the old man said. “I’ll waken 
 you in time.” 
-
 “I do not like for him to waken me. It is as though I 
 were inferior.” 
-
 “I know.” 
-
 “Sleep well old man.” 
-
 The boy went out. They had eaten with no light on 
 the table and the old man took off his trousers and 
 went to bed in the dark. He rolled his trousers up to 
 make a pillow, putting the newspaper inside them. He 
 rolled himself in the blanket and slept on the other old 
 newspapers that covered the springs of the bed. 
-
 He was asleep in a short time and he dreamed of 
 Africa when he was a boy and the long golden beaches 
 and the white beaches, so white they hurt your eyes, 
 and the high capes and the great brown mountains. He 
 lived along that coast now every night and in his 
 dreams he heard the surf roar and saw the native boats 
-
-
-24 
-
-
-The Old Man and the Sea 
-
-
 come riding through it. He smelled the tar and oakum 
 of the deck as he slept and he smelled the smell of 
 Africa that the land breeze brought at morning. 
-
 Usually when he smelled the land breeze he woke 
 up and dressed to go and wake the boy. But tonight the 
 smell of the land breeze came very early and he knew 
@@ -1308,7 +382,6 @@ it was too early in his dream and went on dreaming to
 see the white peaks of the Islands rising from the sea 
 and then he dreamed of the different harbours and 
 roadsteads of the Canary Islands. 
-
 He no longer dreamed of storms, nor of women, nor 
 of great occurrences, nor of great fish, nor fights, nor 
 contests of strength, nor of his wife. He only dreamed 
@@ -1321,16 +394,8 @@ urinated outside the shack and then went up the road
 to wake the boy. He was shivering with the morning 
 cold. But he knew he would shiver himself warm and 
 that soon he would be rowing. 
-
 The door of the house where the boy lived was un- 
 locked and he opened it and walked in quietly with his 
-
-
-25 
-
-
-The Old Man and the Sea 
-
 bare feet. The boy was asleep on a cot in the first room 
 and the old man could see him clearly with the light 
 that came in from the dying moon. He took hold of one 
@@ -1338,79 +403,48 @@ foot gently and held it until the boy woke and turned'
 and looked at him. The old man nodded and the boy 
 took his trousers from the chair by the bed and, sitting 
 on the bed, pulled them on. 
-
 The old man went out the door and the boy came 
 after him. He was sleepy and the old man put his arm 
 across his shoulders and said, “I am sorry." 
-
 "Que va” the boy said. ‘It is what a man must 
 do." 
-
 They walked down the road to the old man’s shack 
 and all along the road, in the dark, barefoot men were 
 moving, carrying the masts of their boats. 
-
 When they reached the old man’s shack the boy 
 took the rolls of line in the basket and the harpoon and 
 garf and the old man carried the mast with the furled 
 sail on his shoulder. 
-
 "Do you want coffee?" the boy asked. 
-
 “We’ll put the gear in the boat and then get some." 
-
 They had coffee from condensed milk cans at an 
 early morning place that served fishermen. 
-
 “How did you sleep old man?" the boy asked. He 
-
-
-26 
-
-
-The Old Man and the Sea 
-
-
 was waking up now although it was still hard for him 
 to leave his sleep. 
-
 “Very well, Manolin,” the old man said. “I feel 
 confident today.” 
-
 “So do I,” the boy said. “Now I must get your sar- 
 dines and mine and your fresh baits. He brings our 
 gear himself. He never wants anyone to carry any- 
 thing.” 
-
 “We're different,” the old man said. “I let you carry 
 things when you were five years old.” 
-
 “I know it,” the boy said. “I’ll be right back. Have 
 another coffee. We have credit here.” 
-
 He walked off, bare-footed on the coral rocks, to the 
 ice house where the baits were stored. 
-
 The old man drank his coffee slowly. It was all he 
 would have all day and he knew that he should take it. 
 For a long time now eating had bored him and he 
 never carried a lunch. He had a bottle of water in the 
 bow of the skiff and that was all he needed for the day. 
-
 The boy was back now with the sardines and the 
 two baits wrapped in a newspaper and they went down 
 the trail to the skiff, feeling the pebbled sand under 
 their feet, and lifted the skiff and slid her into the w^a- 
 ter. 
-
-
-27 
-
-
-The Old Man and the Sea 
-
 “Good luck old man.” 
-
 “Good luck,” the old man said. He fitted the rope 
 lashings of the oars onto the thole pins and, leaning 
 forward against the thrust of the blades in the water, 
@@ -1419,7 +453,6 @@ were other boats from the other beaches going out to
 sea and the old man heard the dip and push of their 
 oars even though he could not see them now the moon 
 was below the hills. 
-
 Sometimes someone would speak in a boat. But most 
 of the boats were silent except for the dip of the oars. 
 They spread apart after they were out of the mouth of 
@@ -1435,16 +468,8 @@ oms where all sorts of fish congregated because of the
 swirl the current made against the steep walls of the 
 floor of the ocean. Here there were concentrations of 
 shrimp and bait fish and sometimes schools of squid in 
-
-
-28 
-
-
-The Old Man and the Sea 
-
 the deepest holes and these rose close to the surface at 
 night where all the wandering fish fed on them. 
-
 In the dark the old man could feel the morning com- 
 ing and as he rowed he heard the trembling sound as 
 flying fish left the water and the hissing that their stiff 
@@ -1461,20 +486,12 @@ kind and very beautiful. But she can be so cruel and it
 comes so suddenly and such birds that fly, dipping and 
 hunting, with their small sad voices are made too del- 
 icately for the sea. 
-
 He always thought of the sea as la mar which is 
 what people call her in Spanish when they love her. 
 Sometimes those who love her say bad things of her 
 but they are always said as though she were a woman. 
 Some of the younger fishermen, those who used buoys 
 as floats for their lines and had motorboats, bought 
-
-
-29 
-
-
-The Old Man and the Sea 
-
 when the shark livers had brought much money, spoke 
 of her as el mar which is masculine. They spoke of her 
 as a contestant or a place or even an enemy. But the 
@@ -1483,7 +500,6 @@ thing that gave or withheld great favours, and if she
 did wild or wicked things it was because she could not 
 help them. The moon affects her as it does a woman, 
 he thought. 
-
 He was rowing steadily and it was no effort for him 
 since he kept well within his speed and the surface of 
 the ocean was flat except for the occasional swirls of 
@@ -1491,23 +507,14 @@ the current. He was letting the current do a third of
 the w'ork and as it started to be light he saw he was 
 already further out than he had hoped to be at this 
 hour. 
-
 I worked the deep wells for a week and did nothing, 
 he thought. Today 111 work out where the schools of 
 bonito and albacore are and maybe there will be a big 
 one with them. 
-
 Before it was really light he had his baits out and 
 was drifting with the current. One bait was down 
 forty fathoms. The second was at seventy-five and the 
 third and fourth were dowm in the blue water at one 
-
-
-30 
-
-
-The Old Man and the Sea 
-
 hundred and one hundred and twenty-five fathoms. 
 Each bait hung head down with the shank of the hook 
 inside the bait fish, tied and sewed solid and all the 
@@ -1517,7 +524,6 @@ hooked through both eyes so that they made a half-gar-
 land on the projecting steel. There was no part of the 
 hook that a great fish could feel which was not sweet 
 smelling and good tasting. 
-
 The boy had given him two fresh small tunas, or 
 albacores, which hung on the two deepest lines like 
 plummets and, on the others, he had a big blue runner 
@@ -1530,20 +536,11 @@ would make the stick dip and each line had two forty-
 fathom coils which could be made fast to the other 
 spare coils so that, if it were necessary, a fish could 
 take out over three hundred fathoms of line. 
-
 Now the man watched the dip of the three sticks 
 over the side of the skiff and rowed gently to keep the 
-
-
-3 
-
-
-The Old Man and the Sea 
-
 lines straight up and down and at their proper depths. 
 It was quite light and any moment now the sun would 
 rise. 
-
 The sun rose thinly from the sea and the old man 
 could see the other boats, low on the water and well in 
 toward the shore, spread out across the current. Then 
@@ -1559,61 +556,37 @@ wished it to he for any fish that swam there. Others let
 them drift with the current and sometimes they were 
 at sixty fathoms when the fishermen thought they were 
 at a hundred. 
-
 But, he thought, I keep them with precision. Only I 
 have no luck any more. But who knows? Maybe today. 
 Every day is a new day. It is better to be lucky. But I 
 would rather be exact. Then when luck comes you are 
 ready. 
-
 The sun was two hours higher now and it did not 
-
-
-32. 
-
-
-The Old Man and the Sea 
-
-
 hurt his eyes so much to look into the east. There were 
 only three boats in sight now and they showed very low 
 and far inshore. 
-
 All my life the early sun has hurt my eyes, he 
 thought. Yet they are still good. In the evening I can 
 look straight into it without getting the blackness. It 
 has more force in the evening too. But in the morning it 
 is painful. 
-
 Just then he saw a man-of-war bird with his long 
 black wings circling in the sky ahead of him. He made 
 a quick drop, slanting down on his back-swept wings, 
 and then circled again. 
-
 “He’s got something,” the old man said aloud. “He’s 
 not just looking.” 
-
 He rowed slowly and steadily toward where the bird 
 was circling. He did not hurry and he kept his lines 
 straight up and down. But he crowded the current a 
 little so that he was still hshing correctly though faster 
 than he would have fished if he was not trying to use 
 the bird. 
-
 The bird went higher in the air and circled again, 
 his wings motionless. Then he dove suddenly and the 
 old man saw flying fish spurt out of the water and sail 
 desperately over the surface. 
-
-
-33 
-
-
-The Old Man and the Sea 
-
-
 “Dolphin,” the old man said aloud. “Big dolphin.” 
-
 He shipped his oars and brought a small line from 
 under the bow. It had a wire leader and a medium- 
 sized hook and he baited it with one of the sardines. 
@@ -1622,7 +595,6 @@ ring bolt in the stern. Then he baited another line and
 left it coiled in the shade of the bow. He went back to 
 rowing and to watching the long-winged black bird 
 who was working, now, low over the water. 
-
 As he watched the bird dipped again slanting his 
 wings for the dive and then swinging them wildly and 
 ineffectually as he followed the flying fish. The old 
@@ -1634,22 +606,12 @@ speed, when the fish dropped. It is a big school of dol-
 phin, he thought. They are widespread and the flying 
 fish have little chance. The bird has no chance. The 
 flying fish are too big for him and they go too fast. 
-
 He watched the flying fish burst out again and again 
 and the ineffectual movements of the bird. That school 
 has gotten away from me, he thought. They are mov- 
 ing out too fast and too far. But perhaps I will pick up 
-
-
-34 
-
-
-The Old Man and the Sea 
-
-
 a stray and perhaps my big fish is around them. My big 
 fish must be somewhere. 
-
 The clouds over the land now rose like mountains 
 and the coast was only a long green line with the gray 
 blue hills behind it. The water was a dark blue now, so 
@@ -1669,18 +631,9 @@ der of a Portuguese man-of-war floating close beside
 the boat. It turned on its side and then righted itself. It 
 floated cheerfully as a bubble with ifs long deadly pur- 
 ple filaments trailing a yard behind it in the water. 
-
 "Agua mala,” the man said. “You whore.” 
-
 From where he swung lightly against his oars he 
 looked down into the water and saw the tiny fish that 
-
-
-35 
-
-
-The Old Man and the Sea 
-
 were coloured like die trailing filaments and swam be- 
 tween them and under the small shade the bubble 
 made as it drifted. They were immune to its poison. 
@@ -1691,7 +644,6 @@ welts and sores on his arms and hands of the sort that
 poison ivy or poison oak can give. But these poisonings 
 from the agua mala came quickly and struck like a whip- 
 lash. 
-
 The iridescent bubbles were beautiful. But they 
 were the falsest thing in the sea and the old man loved 
 to see the big sea turtles eating them. The turtles saw 
@@ -1701,20 +653,11 @@ filaments and all. The old man loved to see the turtles
 eat them and he loved to walk on them on the beach 
 after a storm and hear them pop when he stepped on 
 them with the horny soles of his feet. 
-
 He loved green turtles and hawk-bills with their ele- 
 gance and speed and their great value and he had a 
 friendly contempt for the huge, stupid loggerheads, yel- 
-low in their armour-plating, strange in their love- 
-s'^ 
-
-
-The Old Man and the Sea 
-
-
 making, and happily eating the Portuguese men-of-war 
 with their eyes shut. 
-
 He had no mysticism about turtles although he had 
 gone in turtle boats for many years. He was sorry for 
 them all, even the great trunk backs that were as long 
@@ -1725,7 +668,6 @@ old man thought, I have such a heart too and my feet
 and hands are like theirs. He ate the white eggs to give 
 himself strength. He ate them all through May to be 
 strong in September and October for the truly big fish. 
-
 He also drank a cup of shark liver oil each day from 
 the big drum in the shack where many of the fisher- 
 men kept their gear. It was there for all fishermen who 
@@ -1733,19 +675,10 @@ wanted it. Most fishermen hated the taste. But it was
 no worse than getting up at the hours that they rose 
 and it was very good against all colds and grippes and 
 it was good for the eyes. 
-
 Now the old man looked up and saw that the bird 
 was circling again. 
-
 “He’s found fish,” he said aloud. No flying fish 
 broke the surface and there was no scattering of bait 
-
-
-37 
-
-
-The Old Man and the Sea 
-
 fish. But as the old man watched, a small tuna rose in 
 the air, turned and dropped head first into the water. 
 The tuna shone silver in the sun and after he had 
@@ -1753,13 +686,11 @@ dropped back into the water another and another rose
 and they were jumping in all directions, churning the 
 water and leaping in long jumps after the bait. They 
 were circling it and driving it. 
-
 If they don’t travel too fast I will get into them, the 
 old man thought, and he watched the school working 
 the water white and the bird now dropping and dip- 
 ping into the bait fish that were forced to the surface 
 in their panic. ^ 
-
 “The bird is a great help,” the old man said. Just 
 then the stern line came taut under his foot, where he 
 had kept a loop of the line, and he dropped his oars 
@@ -1772,20 +703,11 @@ the boat. He lay in the stern in the sun, compact and
 bullet shaped, his big, unintelligent eyes staring as he 
 thumped his life out against the planking of the boat 
 with the quick shivering strokes of his neat, fast-moving 
-
-
-38 
-
-
-The Old Man and the Sea 
-
 tail. The old man hit him on the head for kindness and 
 kicked him, his body still shuddering, under the shade 
 of the stern. 
-
 “Albacore,” he said aloud. “He’ll make a beautiful 
 bait. He’ll weigh ten pounds.” 
-
 He did not remember when he had first started to 
 talk aloud when he was by himself. He had sung when 
 he was by himself in the old days and he had sung at 
@@ -1800,19 +722,11 @@ not to talk unnecessarily at sea and the old man had
 always considered it so and respected it. But now he 
 said his thoughts aloud many times since there was no 
 one that they could annoy. 
-
 “If the others heard me talking out loud they would 
 think that I am crazy,” he said aloud. “But since I am 
 not crazy, I do not care. And the rich have radios to 
 talk to them in their boats and to bring them the base- 
 ball.” 
-
-
-39 
-
-
-The Old Man and the Sea 
-
 Now is no time to think of baseball, he thought. 
 Now is the time to think of only one thing. That 
 which I was born for. There might be a big one around 
@@ -1822,7 +736,6 @@ ing far out and fast. Everything that shows on the sur-
 face today travels very fast and to the north-east. Can 
 that be the time of day? Or is it some sign of weather 
 that I do not knovv^? 
-
 He could not see the green of the shore now but 
 only the tops of the blue hills that showed white as 
 though they were snow-capped and the clouds that 
@@ -1833,29 +746,17 @@ by the high sun and it was only the great deep prisms
 in the blue water that the old man saw now with his 
 lines going straight down into the water that was a 
 mile deep. 
-
 The tuna, the fishermen called all the fish of that 
 species tuna and only distinguished among them by 
 their proper names when they came to sell them or to 
 trade them for baits, were down again. The sun was 
-
-
-40 
-
-
-The Old Man and the Sea 
-
-
 hot now and the old man felt it on the back of his neck 
 and felt the sweat trickle down his back as he rowed. 
-
 I could just drift, he thought, and sleep and put a 
 bight of line around my toe to wake me. But today is 
 eighty-five days and I should fish the day well. 
-
 Just then, watching his lines, he saw one of the pro- 
 jecting green sticks dip sharply. 
-
 “Yes,” he said. “Yes,” and shipped his oars without 
 bumping the boat. He reached out for the line and 
 held it softly between the thumb and forefinger of his 
@@ -1866,73 +767,47 @@ actly what it was. One hundred fathoms down a marlin
 was eating the sardines that covered the point and the 
 shank of the hook where the hand-forged hook pro- 
 jected from the head of the small tuna^ 
-
 The old man held the line delicately, and softly, with 
 his left hand, unleashed it from the stick. Now he 
 could let it run through his fingers without the fish 
 feeling any tension. 
-
 This far out, he must be huge in this month, he 
 thought. Eat them, fish. Eat them. Please eat them. 
-
-
-41 
-
-
-The Old Man and the Sea 
-
 How fresh they are and you down there six hundred 
 feet in that cold water in the dark. Make another turn 
 in the dark and come back and eat them. 
-
 He felt the light delicate pulling and then a harder 
 pull when a sardine’s head must have been more 
 difficult to break from the hook. Then there was noth- 
 ing. 
-
 “Come on,” the old man said aloud. “Make another 
 turn. Just smell them. Aren’t they lovely? Eat them 
 good now and then there is the tuna. Hard and cold 
 and lovely. Don’t be shy, fish. Eat them.” 
-
 He waited with the line between his thumb and his 
 finger, watching it and the other lines at the same time 
 for the fish might have swum up or down. Then came 
 the same delicate pulling touch again. 
-
 “He’ll take it,” the old man said aloud. “God help 
 him to take it.” 
-
 He did not take it though. He was gone and the old 
 man felt nothing. 
-
 “He can’t have gone,” he said. “Christ knows he 
 can’t have gone. He’s making a turn. Maybe he has 
 been hooked before and he remembers something of 
-
-
-42 
-
-
-The Old Man and the Sea 
-
 Then he felt the gentle touch on the line and he 
 was happy. 
-
 “It was only his turn,” he said. “He’ll take it.” 
-
 He was happy feeling the gentle pulling and then 
 he felt something hard and unbelievably heavy. It was 
 the weight of the fish and he let the line slip down, 
-down, down, unrolling off the first of the two reser&gt;;e 
+down, down, unrolling off the first of the two reser>;e 
 coils. As it went down, slipping lightly through the old 
 man’s fingers, he still could feel the great weight, 
 though the pressure of his thumb and finger were al- 
 most imperceptible. 
-
 “What a fish,” he said. “He has it sideways in his 
 mouth now and he is moving off with it.” 
-
 Then he will turn and swallow it, he thought. He 
 did not say that because he knew that if you said a 
 good thing it might not happen. He knew what a huge 
@@ -1943,88 +818,56 @@ the weight was still there. Then the weight increased
 and he gave more line. He tightened the pressure of 
 his thumb and finger for a moment and the weight in- 
 creased and was going straight down. 
-
-
-43 
-
-
-The Old Man and the Sea 
-
 “He’s taken it,” he said. “Now I’ll let him eat it 
 well.” 
-
 He let the line slip through his fingers while he 
 reached down with his left hand and made fast the 
 free end of the two reserve coils to the loop of the two 
 reserve coils of the next line. Now he was ready. He 
 had three forty-fathom coils of line in reserve now, as 
 well as the coil he was using. 
-
 “Eat it a little more,” he said. “Eat it well.” 
-
 Eat it so that the point of the hook goes into your 
 heart and kills you, he thought. Come up easy and let 
 me put the harpoon into you. All right. Are you ready? 
 Have you been long enough at table? 
-
 “Now!” he said aloud and struck hard with both 
 hands, gained a yard of line and then struck again and 
 again, swinging with each arm alternately on the cord 
 with all the strength of his arms and the pivoted 
 weight of his body. 
-
 Nothing happened. The fish just moved away slowly 
 and the old man could not raise him an inch. His line 
 was strong and made for heavy fish and he held it 
 against his back until it was so taut that beads of water 
 were jumping from it. Then it began to make a slow 
 hissing sound in the water and he still held it, bracing 
-
-
-44 
-
-
-The Old Man and the Sea 
-
 himself against the thwart and leaning back against 
 the pull. The boat began to move slowly off toward the 
 north-west. 
-
 The fish moved steadily and they travelled slovx^ly on 
 the calm water. The other baits were still in the water 
 but there was nothing to be done. 
-
 “I wish I had the boy/’ the old man said aloud. “I’m 
 being towed by a fish and I’m the towing bitt. I could 
 make the line fast. But then he could break it. I must 
 hold him all I can and give him line when he must 
 have it. Thank God he is travelling and not going 
 dovi^n.” 
-
 What I will do if he decides to go down, I don’t 
 know. What I’ll do if he sounds and dies I don’t know. 
 But I’ll do something. There are plenty of things I can 
 do. 
-
 He held the line against his back and watched its 
 slant in the water and the skiff moving steadily to the 
 north-west. 
-
 This will kill him, the old man thought. He can’t do 
 this forever. But four hours later the fish was still swim- 
 ming steadily out to sea, towing the skiff, and the old 
 man was still braced solidly with the line across his 
 back. 
-
-
-45 
-
-
-The Old Man and the Sea 
-
 “It was noon when I hooked him,” he said. “And I 
 have never seen him.” 
-
 He had pushed his straw hat hard down on his head 
 before he hooked the fish and it was cutting his fore- 
 head. He was thirsty too and he got down on his knees 
@@ -2034,7 +877,6 @@ bottle with one hand. He opened it and drank a little.
 Then he rested against the bow. He rested sitting on the 
 un-stepped mast and sail and tried not to think but only 
 to endure. 
-
 Then he looked behind him and saw that no land 
 was visible. That makes no difference, he thought. I 
 can always come in on the glow from Havana. There 
@@ -2047,15 +889,7 @@ But what a fish to pull like that. He must have his
 mouth shut tight on the wire. I wish I could see him. I 
 wish I could see him only once to know what I have 
 against me. 
-
 The fish never changed his course nor his direction 
-
-46 
-
-
-The Old Man and the Sea 
-
-
 all that night as far as the man could tell from watch- 
 ing the stars. It was cold after the sun went down and 
 the old man’s sweat dried cold on his back and his arms 
@@ -2069,10 +903,8 @@ had found a way of leaning forward against the bow so
 that he was almost comfortable. The position actually 
 was only somewhat less intolerable; but he thought of 
 it as almost comfortable. 
-
 I can do nothing with him and he can do nothing 
 with me, he thought. Not as long as he keeps this up. 
-
 Once he stood up and urinat ed over the side of the 
 skiff and looked at the stars and checked his course. 
 The line showed like a phosphorescgnt streak in the 
@@ -2082,50 +914,30 @@ so strong, so that he knew the current must be carrying
 them to the eastward. If I lose the glare of Havana we 
 must be going more to the eastward, he thought. For if 
 the fish’s course held true I must see it for many more 
-
-
-47 
-
-
-The Old Man and the Sea 
-
 hours. I wonder how the baseball came out in the 
 grand leagues today, he thought. It would be wonder- 
 ful to do this with a radio. Then he thought, think of it 
 always. Think of what you are doing. You must do 
 nothing stupid. 
-
 Then he said aloud, “I wish I had the boy. To help 
 me and to see this.” 
-
 No one should be alone in their old age, he thought. 
 But it is unavoidably I must remember to eat the tuna 
 before he spoils in order to keep strong. Remember, no 
 matter how little you want to, that you must eat him in 
 the morning. Remember, he said to himself. 
-
 During the night two porpoises came around the 
 boat and he could hear them rolling and blowing. He 
 could tell the difference between the blowing noise the 
 male made and the sighing blow of the female. 
-
 “They are good,” he said. “They play and make 
 jokes and love one another. They are our brothers like 
 the flying fish.” 
-
 Then he began to ^ty the great fish that he had 
 hooked. He is wonderful and strange and who knows 
 how old he is, he thought. Never have I had such a 
 strong fish nor one who acted so strangely. Perhaps he 
 is too wise to jump. He could ruin me by jumping or 
-
-
-48 
-
-
-The Old Man and the Sea 
-
-
 by a wild rush. But perhaps he has been hooked many 
 times before and he knows that this is how he should 
 make his fight. He cannot know that it is only one man 
@@ -2134,7 +946,6 @@ fish he is and what will he bring in the market if the
 flesh is good. He took the bait like a male and he pulls 
 like a male and his fight has no panic in it. I wonder if 
 he has any plans or if he is just as desperate as I am? 
-
 He remembered the time he had hooked one of a 
 pair of marlin. The male fish always let the female fish 
 feed first and the hooked fish, the female, made a wild, 
@@ -2151,50 +962,30 @@ colour almost like the backing of mirrors, and then,
 with the boy’s aid, hoisted her aboard, the male fish 
 had stayed by the side of the boat. Then, while the old 
 man was clearing the lines and preparing the harpoon, 
-
-
-49 
-
-
-The Old Man and the Sea 
-
 the male fish jumped high into the air beside the boat 
 to see where the female was and then went down deep, 
 his lavender wings, that were his pectoral fins, spread 
 wide and all his wide lavender stripes showing. He was 
 beautiful, the old man remembered, and he had stayed. 
-
 That was the saddest thing I ever saw with them, 
 the old man thought. The boy was sad too and we 
 begged her pardon and h^Gheied her promptly. 
-
 “I wish the boy was here,” he said aloud and settled 
 himself against the rounded planks of the bow and felt 
 the strength of the great fish through the line he held 
 across his shoulders moving steadily toward whatever 
 he had chosen. 
-
 When once, through my treachery , it had been nec- 
 essary to him to make a choice, the old man thought. 
-
 His choice had been to stay in the deep dark water 
 far out beyond all snares and traps and X^actysiies. My 
 choice was to go there to find him beyond all people. 
 Beyond all people in the world. Now we are joined to- 
 gether and have been since noon. And no one to help 
 either one of us. 
-
 Perhaps I should not have been a fisherman, he 
 thought. But that was the thing that I was born for. I 
 must surely remember to eat the tuna after it gets light. 
-
-
-50 
-
-
-The Old Man and the Sea 
-
-
 Some time before daylight something took one of the 
 baits that were behind him. He heard the stick break 
 and the line begin to rush out over the gunwale of the 
@@ -2209,7 +1000,6 @@ tight. Now he had six reserve coils of line. There were
 two from each bait he had severed and the two from 
 the bait the fish had taken and they were all con- 
 nected. 
-
 After it is light, he thought, I will work back to the 
 forty-fathom bait and cut it away too and link up the 
 reserve coils. I will have lost two hundred fathoms of 
@@ -2219,20 +1009,11 @@ some fish and it cuts him off? I don’t know what that
 fish was that took the bait just now. It could have been 
 a marlin or a broadbill or a shark. I never felt him. I 
 had to get rid of him too fast. 
-
 Aloud he said, “I wish I had the boy.” 
-
-
-51 
-
-
-The Old Man and the Sea 
-
 But you haven’t got the boy, he thought. You have 
 only yourself and you had better work back to the last 
 line now, in the dark or not in the dark, and cut it 
 away and hook up the two reserve coils. 
-
 So he did it. It was difficult in the dark and once the 
 fish made a surge that pulled him down on his face and 
 made a cut below his eye. The blood ran down his 
@@ -2244,7 +1025,6 @@ new part of his shoulders and, holding it anchored
 with his shoulders, he carefully felt the pull of the fish 
 and then felt with his hand the progress of the skiff 
 through the water. 
-
 I wonder what he made that lurch for, he thought. 
 The wire must have slipped on the great hill of his 
 back. Certainly his back cannot feel as badly as mine 
@@ -2252,16 +1032,8 @@ does. But he cannot pull this skiff forever, no matter
 how great he is. Now everything is cleared away that 
 might make trouble and I have a big reserve of line; all 
 that a man can ask. 
-
 “Fish,” he said softly, aloud, “Fll stay with you until 
 I am dead.” 
-
-
-52 
-
-
-The Old Man and the Sea 
-
 He’ll stay with me too, I suppose, the old man 
 thought and he waited for it to be light. It was cold 
 now in the time before daylight and he pushed against 
@@ -2270,33 +1042,22 @@ thought. And in the first light the line extended out
 and down into the water. The boat moved steadily and 
 when the first edge of the sun rose it was on the old 
 man’s right shoulder. 
-
 “He’s headed north,” the old man said. The current 
 will have set us far to the^eastward, he thought. I wish 
 he would turn with the current. That would show that 
 he was tiring. 
-
 When the sun had risen further the old man real- 
 ized that the fish was not tiring. There was only one 
 favorable sign. The slant of the line showed he was 
 swimming at a lesser depth. That did not necessarily 
 mean that he would jump. But he might. 
-
 “God let him jump,” the old man said. “I have 
 enough line to handle him.” 
-
 Maybe if I can increase the tension just a little it 
 will hurt him and he will jump, he thought. Now that 
 it is daylight let him jump so that he’ll fill the sacks 
 along his backbone with air and then he cannot go 
 deep to die. 
-
-
-53 
-
-
-The Old Man and the Sea 
-
 He tried to increase the tension, but die line had 
 been taut up to the very edge of the breaking point 
 since he had hooked the fish and he felt the harshness 
@@ -2306,86 +1067,55 @@ Each jerk widens the cut the hook makes and then
 when he does jump he might throw it. Anyway I feel 
 better with the sun and for once I do not have to look 
 into it. 
-
 There was yellow weed on the line but the old man 
 knew that only made an added drag and he was 
 pleased. It was the yellow Gulf weed that had made so 
 much phosphorescence in the night. 
-
 “Fish,” he said, “I love you and respect you very 
 much. But I will kill you dead before this day ends.” 
-
 Let us hope so, he thought. 
-
 A small bird came toward the skiff from the north. 
 He was a warbler and Hying very low over the water. 
 The old man could see that he was very tired. 
-
 The bird made the stern of the boat and rested 
 there. Then he fiew around the old man's head and 
 rested on the line where he was more comfortable. 
-
 “How old are you?” the old man asked the bird. “Is 
 this your first trip?” 
-
-
-54 
-
-
-The Old Man and the Sea 
-
 The bird looked at him when he spoke. He was too 
 tired even to examine the line and he teetered on it as 
 his delicate feet gripped it fast. 
-
 “It’s steady,” the old man told him. “It’s too steady. 
 You shouldn’t be that tired after a windless night. 
 What are birds coming to?” 
-
 The hawks, he thought, that come out to sea to meet 
 them. But he said nothing of this to the bird who could 
 not understand him anyway and who would learn 
 about the hawks soon enough. 
-
 “Take a good rest, small bird,” he said. “Then go in 
 and take your chance like any man or bird or fish.” 
-
 It encou ra ged him to talk because his back had 
 stiffened in the night and it hurt truly now. 
-
 “Stay at my house if you like, bird,” he said. “I 
 am sorry I cannot hoist the sail and take you in 
 with the small breeze that is rising. But I am with a 
 friend.” 
-
 Just then the fish gave a sudden lurch that pulled 
 the old man down onto the bow and would have pulled 
 him overboard if he had not braced himself and given 
 some line. 
-
 The bird had flown up when the line jerked and the 
 old man had not even seen him go. He felt the line 
-
-
-55 
-
-
-The Old Man and the Sea 
-
 carefully with his right hand and noticed his hand was 
 bleeding. 
-
 “Something hurt him then,” he said aloud and 
 pulled back on the line to see if he could turn the fish. 
 But when he was touching the breaking point he held 
 steady and settled back against the strain of the line. 
-
 “You're feeling it now, fish,” he said. “And so, God 
 knows, am I.” 
-
 He looked around for the bird now because he 
 would have liked him for company. The bird was gone. 
-
 You did not stay long, the man thought. But it is 
 rougher where you are going until you make the shore. 
 How did I let the fish cut me with that one quick pull 
@@ -2393,29 +1123,18 @@ he made? I must be getting very stupid. Or perhaps I
 was looking at the small bird and thinking of him. 
 Now I will pay attention to my work and then I must 
 eat the so that I will not have a failure of 
-
 strength. 
-
 “I wish the boy were here and that I had some salt,” 
 he said aloiiT 
-
 Shifting the weight of the line to his left shoulder 
 and kneeling carefully he washed his hand in the 
 ocean and held it there, submer ged^ for more than a 
-
-
 56 
-
-
 The Gld Man and the Sea 
-
-
 minute watching the blood trail away and the steady 
 movement of the water against his hand as the boat 
 moved. 
-
 “He has slowed much,” he said. 
-
 The old man would have liked to keep his hand in 
 the salt water longer but he was afraid of another sud- 
 den lurch by the fish and he stood up and braced him- 
@@ -2424,11 +1143,9 @@ line burn that had cut his flesh. But it was in the work-
 ing part of his hand. He knew he would need his 
 hands before this was over and he did not like to be cut 
 before it started. 
-
 “Now,” he said, when his hand had dried, “I must 
 eat the small tuna. I can reach him with the gaff and 
 eat him here in comfort.” 
-
 He knelt down and found the tuna under the stern 
 with the gaff and drew it toward him keeping it clear 
 of the coiled lines. Holding the line with his left shoul- 
@@ -2437,105 +1154,64 @@ took the tuna off the gaff hook and put the gaff back in
 place, fie put one knee on the fish and cut strips of 
 dark red meat longitudinally from the back of the head 
 to the tail. They were wedge-shaped strips and he cut 
-
-
-57 
-
-
-The Old Man and the Sea 
-
-
 them from next to the baek bone down to the edge of 
 the belly. When he had cut six strips he spread them 
 out on the wood of the bow, wiped his knife on his 
 trousers, and lifted the carcass of the bonito by the tail 
 and dropped it overboard. 
-
 “I don’t think I can eat an entire one,” he said and 
 drew his knife across one of the strips. He could feel 
 the steady hard pull of the line and his left hand was 
 cramped. It drew up tight on the heavy cord and he 
 looked at it in disgust. 
-
 “What kind of a hand is that,” he said. “Cramp 
 then if you want. Make yourself into a claw. It will do 
 you no good.” 
-
 Come on, he thought and looked down into the dark 
 water at the slant of the line. Eat it now and it will 
 strengthen the hand. It is not the hand’s fault and you 
 have been many hours with the fish. But you can stay 
 with him forever. Eat the bonito now. 
-
 He picked up a piece and put it in his mouth and 
 chewed it slowly. It was not unpleasant. 
-
 Chew it well, he thought, and get all the juices. It 
 would not be bad to eat with a little lime or with 
 lemon or with salt. 
-
 “How do you feel, hand?” he asked the cramped 
-
-58 
-
-
-The Old Man and the Sea 
-
-
 hand that was almost as stiff as rigor mortis. “I’ll eat 
 some more for you.” 
-
 He ate the other part of the piece that he had cut in 
 two. He chewed it carefully and then spat out the skin. 
-
 “How does it go, hand? Or is it too early to know?” 
-
 He took another full piece and chewed it. 
-
 “It is a strong full-blooded fish,” he thought. “I was 
 lucky to get him instead of dolphin. Dolphin is too 
 svv^eet. This is hardly sweet at all and all the strength is 
 still in it.” 
-
 There is no sense in being anything but practical 
 though, he thought. I wish I had some salt. And I do 
 not know whether the sun will rot or dry what is left, 
 so I had better eat it all although I am not hungry. 
 The fish is calm and steady. I will eat it all and then I 
 will be ready. 
-
 “Be patient, hand,” he said. “I do this for you.” 
-
 I wish I could feed the fish, he thought. He is my 
 brother. But I must kill him and keep strong to do it. 
 Slowly and conscientiously he ate all of the wedge- 
 shaped strips of fish. 
-
 He straightened up, wiping his hand on his trousers. 
-
 “Now,” he said. “You can let the cord go, hand, and 
 I will handle him with the right arm alone until you 
-
-
-59 
-
-
-The Old Man and the Sea 
-
-
 stop that nonsense/’ He put his left foot on the heavy 
 line that the left hand had held and lay back against 
 the pull against his back. 
-
 “God help me to have the cramp go,” he said. “Be- 
 cause I do not know what the fish is going to do.” 
-
 But he seems calm, he thought, and following his 
 plan. But what is his plan, he thought. And what is 
 mine? Mine I must improvise to his because of his 
 great size. If he will jump I can kill him. But he stays 
 down forever. Then I will stay down with him forever. 
-
 He rubbed the cramped hand against his trousers ’ 
 and tried to gentle the fingers. But it would not open. 
 Maybe it will open with the sun, he thought. Maybe it 
@@ -2545,74 +1221,51 @@ But I do not want to open it now by force. Let it open
 by itself and come back of its own accord. After all I 
 abused it much in the night when it was necessary to 
 free and untie the various lines. 
-
 He looked across the sea and knew how alone he 
 was now. But he could see the prisms in the deep dark 
 water and the line stretching ahead and the strange 
 undulation of the calm. The clouds were building up 
 now for the trade wind and he looked ahead and saw a 
-
-
 6o 
-
-
 The Gld Man and the Sea 
-
 flight of wild ducks etching themselves against the sky 
 over the water, then blurring, then etching again and 
 he knew no man was ever alone on the sea. 
-
 He thought of how some men feared being out of 
 sight of land in a small boat and knew they were right 
 in the months of sudden bad weather. But now they 
 were in hurricane months and, when there are no hurri- 
 canes, the weather of hurricane months is the best of 
 all the year. 
-
 If there is a hurricane you always see the signs of it 
 in the sky for days ahead, if you are at sea. They do 
 not see it ashore because they do not know what to 
 look for, he thought. The land must make a difference 
 too, in the shape of the clouds. But we have no hurri- 
 cane coming now. 
-
 He looked at the sky and saw the white cumulus 
 built like friendly piles of ice cream and high above 
 were the thin feathers of the cirrus against the high 
 September sky. 
-
 “Light hrisa/' he said. “Better weather for me than 
 for you, fish.’' 
-
 His left hand was still cramped, but he was unknot- 
 ting it slowly. 
-
 I hate a cramp, he thought. It is a treachery of one’s 
-
-
-6i 
-
-
-The Old Man and the Sea 
-
 own body. It is humiliating before others to have a diar- 
 rhoea from ptomaine poisoning or to vomit from it. But 
 a cramp, he thought of it as a calamhre, humiliates one- 
 self especially when one is alone. 
-
 If the boy were here he could rub it for me and 
 loosen it down from the forearm, he thought. But it will 
 loosen up. 
-
 Then, with his right hand he felt the difference in 
 the pull of the line before he saw the slant change in 
 the water. Then, as he leaned against the line and 
 slapped his left hand hard and fast against his thigh he 
 saw the line slanting slowly upward. 
-
 “He’s coming up,” he said. “Come on hand. Please 
 come on.” 
-
 The line rose slowly and steadily and then the sur- 
 face of the ocean bulged ahead of the boat and the fish 
 came out. He came out unendingly and water poured 
@@ -2622,16 +1275,8 @@ on his sides showed wide and a light lavender. His
 sword was as long as a baseball bat and tapered like a 
 rapier and he rose his full length from the water and 
 then re-entered it, smoothly, like a diver and the old 
-
-
-62 
-
-
-The Old Man and the Sea 
-
 man saw the great scythe-blade of his tail go under and 
 the line commenced to race out. 
-
 “He is two feet longer than the skiff/' the old man 
 said. The line was going out fast but steadily and the 
 fish was not panicked. The old man was trying with 
@@ -2639,7 +1284,6 @@ both hands to keep the line just inside of breaking
 strength. He knew that if he could not slow the fish 
 ' with a steady pressure the fish could take out all the 
 I line and break it. 
-
 He is a great fish and I must convince him, he 
 . thought. I must never let him learn his strength nor 
 j what he could do if he made his run. If I were him I 
@@ -2647,7 +1291,6 @@ I would put in everything now and go until something
 ! broke. But, thank God, they are not as intelligent as 
 ' we who kill them; although they are more noble and 
 more able. 
-
 The old man had seen many great fish. He had seen 
 many that weighed more than a thousand pounds and 
 he had caught two of that size in his life, but never 
@@ -2655,19 +1298,11 @@ alone. Now alone, and out of sight of land, he w^as fast
 to the biggest fish that he had ever seen and bigger 
 than he had ever heard of, and his left hand was still 
 as tight as the gripped claws of an eagle. 
-
-
-63 
-
-
-The Old Man and the Sea 
-
 It will uncramp though, he thought. Surely it will 
 uncramp to help my right hand. There are three things 
 that are brothers: the fish and my two hands. It must 
 uncramp. It is unworthy of it to be cramped. The fish 
 had slowed again and was going at his usual pace. 
-
 I wonder why he jumped, the old man thought. He 
 jumped almost as though to show me how big he was. I 
 know now, anyway, he thought. I wish I could show 
@@ -2676,111 +1311,72 @@ cramped hand. Let him think I am more man than I
 am and I will be so. I wish I was the fish, he thought, 
 with everything he has against only my will and my 
 intelligence. 
-
 He settled comfortably against the wood and took 
 his suffering as it came and the fish swam steadily and 
 the boat moved slowly through the dark water. There 
 was a small sea rising with the wind coming up from 
 the east and at noon the old man’s left hand was un- 
 cramped. 
-
 “Bad news for you, fish,” he said and shifted the 
 line over the sacks that covered his shoulders. 
-
 He was comfortable but suffering, although he did 
 not admit the suffering at all. 
-
 “I am not religious,” he said. “But I will say ten Our 
-
-
-64 
-
-
-The Old Man and the Sea 
-
 Fathers and ten Hail Marys that I should catch this 
 fish, and I promise to make a pilgrimage to the Virgin 
 of Cobre if I catch him. That is a promise.'^ 
-
 He commenced to say his prayers mechanically. 
 Sometimes he would be so tired that he could not re- 
 member the prayer and then he would say them fast so 
 that they would come automatically. Hail Marys are 
 easier to say than Our Fathers, he thought. 
-
 “Hail Mary full of Grace the Lord is with thee. 
 Blessed art thou among women and blessed is the fruit 
 of thy womb, Jesus. Holy Mary, Mother of God, pray 
 for us sinners now and at the hour of our death. 
 Amen.” Then he added, “Blessed Virgin, pray for the 
 death of this fish. Wonderful though he is.” 
-
 With his prayers said, and feeling much better, but 
 suffering exactly as much, and perhaps a little more, he 
 leaned against the wood of the bow and began, mechan- 
 ically, to work the fingers of his left hand. 
-
 The sun was hot now although the breeze was rising 
 gently. 
-
 “I had better re-bait that little line out over the 
 stern,” he said. “If the fish decides to stay another 
 night I will need to eat again and the water is low in 
 the bottle. I don’t think I can get anything but a dol- 
-
-
-65 
-
-
-The Old Man and the Sea 
-
 phin here. But if I eat him fresh enough he won't be 
 bad. I wish a flying fish would come on board tonight. 
 But I have no light to attract them. A flying fish is 
 excellent to eat raw and I would not have to cut him 
 up. I must save all my strength now. Christ, I did not 
 know he was so big. " 
-
 “I'll kill him though," he said. “In all his greatness 
 and his glory." 
-
 Although it is unjust, he thought. But I will show 
 him what a man can do and what a man endures. 
-
 “I told the boy I was a strange old man," he said. 
 “Now is when I must prove it." 
-
 The thousand times that he had proved it meant 
 nothing. Now he was proving it again. Each time was a 
 new time and he never thought about the past when he 
 was doing it. 
-
 I wish he'd sleep and I could sleep and dream about 
 the lions, he thought. Why are the lions the main 
 thing that is left? Don't think, old man, he said to him- 
-self. Rest gently now against the v&gt;^ood and think of 
+self. Rest gently now against the v>^ood and think of 
 nothing. He is working. Work as little as you can. 
-
 It was getting into the afternoon and the boat still 
 moved slowly and steadily. But there was an added 
 drag now from the easterly breeze and the old man 
-
-
-66 
-
-
-The Old Man and the Sea 
-
-
 rode gently with the small sea and the hurt of the cord 
 across his back came to him easily and smoothly. 
-
 Once in the afternoon the line started to rise again. 
 But the fish only continued to swim at a slightly higher 
 level. The sun was on the old man’s left arm and shoul- 
 der and on his back. So he knew the fish had turned 
 east of north. 
-
 Now that he had seen him once, he could picture 
 the fish swimming in the water with his purple pecto- 
 ral fins set wide as wings and the great erect tail slicing 
@@ -2789,28 +1385,17 @@ depth, the old man thought. His eye is huge and a
 horse, with much less eye, can see in the dark. Once I 
 could see quite well in the dark. Not in the absolute 
 dark. But almost as a cat sees. 
-
 The sun and his steady movement of his fingers had 
 uncramped his left hand now completely and he began 
 to shift more of the strain to it and he shrugged the 
 muscles of his back to shift the hurt of the cord a little. 
-
 “If you’re not tired, fish,” he said aloud, “you must 
 be very strange.” 
-
 He felt very tired now and he knew the night would 
 come soon and he tried to think of other things. He 
 thought of the Big Leagues, to him they were the Gran 
-
-
-67 
-
-
-The Old Man and the Sea 
-
 Ligas, and he knew that the Yankees of New York 
 were playing the Tigres of Detroit. 
-
 This is the second day now that I do not know the 
 result of the juegos, he thought. But I must have 
 confidence and I must be worthy of the great DiMag- 
@@ -2823,28 +1408,16 @@ or the loss of the eye and of both eyes and continue to
 fight as the fighting cocks do. Man is not much beside 
 the great birds and beasts. Still I v.'ould rather be that 
 beast down there in the darkness of the sea. 
-
 “Unless sharks come,” he said aloud. “If sharks 
 come, God pity him and me.” 
-
 Do you believe the great DiMaggio would stay with 
 a fish as long as I will stay with this one? he thought, I 
 am sure he would and more since he is young and 
 strong. Also his father was a fisherman. But would the 
 bone spur hurt him too much? 
-
 “I do not know,” he said aloud. “I never had a bone 
 spur.” 
-
 As the sun set he remembered, to give himself more 
-
-
-68 
-
-
-The Old Man and the Sea 
-
-
 confidence, the time in the tavern at Casablanca when 
 he had played the hand game with the great negro 
 from Cienfuegos who was the strongest man on the 
@@ -2866,18 +1439,9 @@ painted bright blue and were of wood and the lamps
 threw their shadows against them. The negro’s shadow 
 was huge and it moved on the wall as the breeze moved 
 the lamps. 
-
 The odds would change back and forth all night and 
 they fed the negro rum and lighted cigarettes for him. 
 Then the negro, after the rum, would try for a tremen- 
-
-
-69 
-
-
-The Old Man and the Sea 
-
-
 dous effort and once he had the old man, who was not 
 an old man then but was Santiago El Qam'^mn^ nearly 
 three inches off balance. But the old man had raised 
@@ -2894,7 +1458,6 @@ go to work on the docks loading sacks of sugar or at the
 Havana Coal Company. Otherwise everyone would 
 have wanted it to go to a finish. But he had finished it 
 anyway and before anyone had to go to work. 
-
 For a long time after that everyone had called him 
 The Champion and there had been a return match in 
 the spring. But not much money was bet and he had 
@@ -2903,34 +1466,22 @@ of the negro from Cienfuegos in the first match. After
 that he had a few matches and then no more. He de- 
 cided that he could beat anyone if he wanted to badly 
 enough and he decided that it was bad for his right 
-
-
-70 
-
-
-The Old Man and the Sea 
-
-
 hand for fishing. He had tried a few practice matches 
 with his left hand. But his left hand had always been a 
 traitor and would not do what he called on it to do and 
 he did not trust it. 
-
 The sun will bake it out well now, he thought. It 
 should not cramp on me again unless it gets too cold in 
 the night. I wonder what this night will bring. 
-
 An airplane passed overhead on its course to JMiami 
 and he watched its shadow scaring up the schools of 
 flying fish. 
-
 “With so much flying fish there should be dolphin,” 
 he said, and leaned back on the line to see if it was 
 possible to gain any on his fish. But he could not and it 
 stayed at the hardness and water-drop shivering that 
 preceded breaking. The boat moved ahead slowly and 
 he watched the airplane until he could no longer see it. 
-
 It must be very strange in an airplane, he thought. I 
 wonder what the sea looks like from that height? They 
 should be able to see the fish well if they do not fly too 
@@ -2939,14 +1490,6 @@ fathoms high and see the fish from above. In the turtle
 boats I was in the cross-trees of the mast-head and even 
 at that height I saw much. The dolphin look greener 
 from there and you can see their stripes and their pur- 
-
-
-71 
-
-
-The Old Man and the Sea 
-
-
 pie spots and you can see all of the school as they 
 swim. Why is it that all the fast-moving fish of the 
 dark current have purple backs and usually purple 
@@ -2955,7 +1498,6 @@ cause he is really golden. But when he comes to feed,
 truly hungry, purple stripes show on his sides as on a 
 marlin. Can it be anger, or the greater speed he makes 
 that brings them out? 
-
 Just before it was dark, as they passed a great island 
 of Sargasso weed that heaved and swung in the light 
 sea as though the ocean were making love with some- 
@@ -2972,19 +1514,10 @@ plunging and cutting from side to side in desperation,
 the old man leaned over the stern and lifted the 
 burnished gold fish with its purple spots over the stern. 
 Its jaws were working convulsively in quick bites against 
-
-
-72 
-
-
-The Old Man and the Sea 
-
-
 the hook and it pounded the bottom of the skiif with 
 its long fiat body, its tail and its head until he clubbed 
 it across the shining golden head until it shivered and 
 was still. 
-
 The old man unhooked the fish, re-baited the line 
 with another sardine and tossed it over. Then he 
 worked his Vv^ay slowly back to the bow. He washed his 
@@ -2992,37 +1525,23 @@ left hand and wiped it on his trousers. Then he shifted
 the heavy line from his right hand to his left and 
 washed his right hand in the sea while he watched the 
 sun go into the ocean and the slant of the big cord. 
-
 “He hasn’t changed at all,” he said. But watching 
 the movement of the water against his hand he noted 
 that it was perceptibly slower. 
-
 “I’ll lash the two oars together across the stern and 
 that will slow him in the night,” he said. “He’s good 
 for the night and so am I.” 
-
 It would be better to gut the dolphin a little later to 
 save the blood in the meat, he thought. I can do that a 
 little later and lash the cars to make a drag at the same 
 time. I had better keep the fish quiet now and not dis- 
 turb him too much at sunset. The setting of the sun is 
 a difBcult time for all fish. 
-
 He let his hand dry in the air then grasped the line 
-
-
-73 
-
-
-The Old Man and the Sea 
-
-
 with it and eased himself as much as he could and al- 
 lowed himself to be pulled forward against the wood so 
 that the boat took the strain as much, or more, than he 
-
 did. 
-
 Fm learning how to do it, he thought. This part of 
 it anyway. Then too, remember he hasn’t eaten since 
 he took the bait and he is huge and needs much food. I 
@@ -3030,11 +1549,9 @@ have eaten the whole bonito. Tomorrow I will eat the
 dolphin. He called it dgrado. Perhaps I should eat 
 some of it when I clean it. It will be harder to eat than 
 the bonito. But, then, nothing is easy. 
-
 “How do you feel, fish?” he asked aloud. “I feel 
 good and my left hand is better and I have food for a 
 night and a day. Pull the boat, fish.” 
-
 He did not truly feel good because the pain from the 
 cord across his back had almost passed pain and gone 
 into a dullness that he mistrusted. But I have had 
@@ -3042,30 +1559,19 @@ worse things than that, he thought. My hand is only
 cut a little and the cramp is gone from the other. My 
 legs are all right. Also now I have gained on him in the 
 question of sustenance. 
-
 It was dark now as it becomes dark quickly after the 
 sun sets in September. He lay against the worn wood 
 of the bow and rested all that he could. The first stars 
-
-
-74 
-
-
-The Old Man and the Sea 
-
 were out. He did not know the name of Rigel but he 
 saw it and knew soon they would all be out and he 
 would have all his distant friends. 
-
 “The fish is my friend too/’ he said aloud. “I have 
 never seen or heard of such a fish. But I must kill him. 
 I am glad we do not have to try to kill the stars.” 
-
 Imagine if each day a man must try to kill the moon, 
 he thought. The moon runs away. But imagine if a 
 man each day should have to try to kill the sun? We 
 were born lucky, he thought. 
-
 Then he was sorry for the great fish that had noth- 
 ing to eat and his determination to kill him never re- 
 laxed in his sorrow for him. How many people will he 
@@ -3073,29 +1579,21 @@ feed, he thought. But are they worthy to eat him? No,
 of course not. There is no one worthy of eating him 
 from the manner of his behaviour and his great 
 dignity. 
-
 I do not understand these things, he thought. But it 
 is good that we do not have to try to kill the sun or the 
 moon or the stars. It is enough to live on the sea and 
 kill our true brothers. 
-
 Now, he thought, I must think about the drag. It 
 has its perils and its merits. I may lose so much line 
 that I will lose him, if he makes his effort and the drag 
-
-
 75 
-
-
 The" Old Man and the Sea 
-
 made by the oars is in place and the boat loses all her 
 lightness. Her lightness prolongs both our suffering 
 but it is my safety since he has great speed that he has 
 never yet employed. No matter what passes I must gut 
 the dolphin so he does not spoil and eat some of him to 
 be strong. 
-
 Now I will rest an hour more and feel that he is 
 solid and steady before I move back to the stern to do 
 the work and make the decision. In the meantime I 
@@ -3108,60 +1606,38 @@ nothing. The punishment of hunger, and that he is
 against something that he does not comprehend, is 
 everything. Rest now, old man, and let him work until 
 your next duty comes. 
-
 He rested for what he believed to be two hours. The 
 moon did not rise now until late and he had no way of 
 judging the time. Nor was he really resting except com- 
 paratively. He was still bearing the pull of the fish 
 across his shoulders but he placed his left hand on the 
-
-
-76 
-
-
-The Old Man and the Sea 
-
-
 gunwale of the bow and confided more and more of the 
 resistance to the fish to the skiff itself. 
-
 How simple it would be if I could make the line 
 fast, he thought. But with one small lurch he could 
 break it. I must cushion the pull of the line with my 
 body and at all times be ready to give line with both 
 hands. 
-
 “But you have not slept yet, old man,’’ he said aloud. 
 “It is half a day and a night and now another day and 
 you have not slept. You must devise a way so that you 
 sleep a little if he is quiet and steady. If you do not 
 sleep you might become unclear in the head.” 
-
 I’m clear enough in the head, he thought. Too clear. 
 I am as clear as the stars that are my brothers. Still I 
 must sleep. They sleep and the moon and the sun sleep 
 and even the ocean sleeps sometimes on certain days 
 when there is no current and a flat calm. 
-
 But remember to sleep, he thought. Make yourself 
 do it and devise some simple and sure way about the 
 lines. Now go back and prepare the dolphin. It is too 
 dangerous to rig the oars as a drag if you must sleep. 
-
 I could go without sleeping, he told himself. But it 
 would be too dangerous. 
-
-
-77 
-
-
-The Old Man and the Sea 
-
 He started to work his way back to the stern on his 
 hands and knees, being careful not to jerk against the 
 fish. He may be half asleep himself, he thought. But I 
 do not want him to rest. He must pull until he dies. 
-
 Back in the stern he turned so that his left hand 
 held the strain of the line across his shoulders and 
 drew his knife from its sheath with his right hand. 
@@ -3182,13 +1658,6 @@ the starlight and the old man skinned one side of him
 while he held his right foot on the fish’s head. Then he 
 turned him over and skinned the other side and cut each 
 side off from the head down to the tail. 
-
-
-78 
-
-
-The Old Man and the Sea 
-
 He slid tlie carcass overboard and looked to see if 
 there was any swirl in the water. But there was only 
 the light of its slow descent. He turned then and 
@@ -3197,7 +1666,6 @@ and putting his knife back in its sheath, he worked his
 way slowly back to the bow. His back was bent with 
 the weight of the line across it and he carried the fish 
 in his right hand. 
-
 Back in the bow he laid the two fillets of fish out on 
 the wood with the flying fish beside them. After that 
 he settled the line across his shoulders in a new place 
@@ -3210,57 +1678,34 @@ against it. The flow was less strong and as he rubbed
 the side of his hand against the planking of the skiff, 
 particles of phosphorus floated off and drifted slowly 
 astern. 
-
 “He is tiring or he is resting,” the old man said. 
 “Now let me get through the eating of this dolphin 
 and get some rest and a little sleep.” 
-
 Under the stars and with the night colder all the 
-
-
-79 
-
-
-The Old Man and the Sea 
-
 time he ate half of one of the dolphin fillets and one of 
 the flying fish, gutted and with its head cut off. 
-
 “What an excellent fish dolphin is to eat cooked,” he 
 said. “And what a miserable fish raw. I will never go in 
 a boat again without salt or limes.” 
-
 If I had brains I would have splashed water on the 
 bow all day and drying, it would have made salt, he 
 thought. But then I did not hook the dolphin until al- 
 most sunset. Still it was a lack of preparation. But I 
 have chewed it all well and I am not nauseated. 
-
 The sky was clouding over to the east and one after 
 another the stars he knew were gone. It looked now as 
 though he were moving into a great canyon of clouds 
 and the wind had dropped. 
-
 “There will be bad weather in three or four days,” 
 he said. “But not tonight and not tomorrow. Rig now to 
 get some sleep, old man, while the fish is calm and 
 steady.” 
-
 He held the line tight in his right hand and then 
 pushed his thigh against his right hand as he leaned all 
 his weight against the wood of the bow. Then he 
 passed the line a little lower on his shoulders and 
 braced his left hand on it. 
-
 My right hand can hold it as long as it is braced, he 
-
-
-8o 
-
-
-The Old Man and the Sea 
-
-
 thought. If it relaxes in sleep my left hand will wake 
 me as the line goes out. It is hard on the right hand. 
 But he is used to punishment. Even if I sleep twenty 
@@ -3268,18 +1713,15 @@ minutes or a half an hour it is good. He lay forward
 cramping himself against the line with all of his body, 
 putting all his weight onto his right hand, and he was 
 asleep. 
-
 He did not dream of the lions but instead of a vast 
 school of porpoises that stretched for eight or ten miles 
 and it was in the time of their mating and they would 
 leap high into the air and return into the same hole 
 they had made in the water when they leaped. 
-
 Then he dreamed that he was in the village on his 
 bed and there was a norther and he was very cold and 
 his right arm was asleep because his head had rested 
 on it instead of a pillow. 
-
 After that he began to dream of the long yellow 
 beach and he saw the first of the lions come down onto 
 it in the early dark and then the other lions came and 
@@ -3287,18 +1729,9 @@ he rested his chin on the wood of the bows where the
 ship lay anchored with the evening off-shore breeze 
 and he waited to see if there would be more lions and 
 he was happy. 
-
 The moon had been up for a long time but he slept 
-
-
-8i 
-
-
-The Old Man and the Sea 
-
 on and the fish pulled on steadily and the boat moved 
 into the tunnel of clouds. 
-
 He woke with the jerk of his right fist coming up 
 against his face and the line burning out through his 
 right hand. He had no feeling of his left hand but he 
@@ -3316,31 +1749,19 @@ point and raising it to breaking point again and again.
 He had been pulled down tight onto the bow and his 
 face was in the cut slice of dolphin and he could not 
 move. 
-
 This is what we waited for, he thought. So now let 
 us take it. 
-
 Make him pay for the line, he thought. Make him 
 pay for it. 
-
 He could not see the fish’s jumps but only heard the 
-
-
-82 
-
-
-The Old Man and the Sea 
-
 breaking of the ocean and the heavy splash as he fell. 
 The speed of the line was cutting his hands badly but 
 he had always known this would happen and he tried 
 to keep the cutting across the calloused parts and not 
 let the line slip into the palm nor cut the fingers. 
-
 If the boy was here he would wet the coils of line, 
 he thought. Yes. If the boy were here. If the boy were 
 here. 
-
 The line went out and out and out but it was slow- 
 ing now and he was making the fish earn each inch of 
 it. Now he got his head up from the wood and out of 
@@ -3351,30 +1772,19 @@ worked back to where he could feel with his foot the
 coils of line that he could not see. There was plenty of 
 line still and now the fish had to pull the friction of all 
 that new line through the water. 
-
 Yes, he thought. And now he has jumped more than 
 a dozen times and filled the sacks along his back with 
 air and he cannot go down deep to die where I cannot 
 bring him up. He will start circling soon and then I 
 must work on him. I wonder what started him so sud- 
 denly? Could it have been hunger that made him des- 
-
-
-83 
-
-
-The Old Man and the Sea 
-
-
 perate, or was he frightened by something in the 
 night? Maybe he suddenly felt fear. But he was such a 
 calm, strong fish and he seemed so fearless and so 
 confident. It is strange. 
-
 “You better be fearless and confident yourself, old 
 man,” he said. “You're holding him again but you can- 
 not get line. But soon he has to circle.” 
-
 The old man held him with his left hand and his 
 shoulders now and stooped dov/n and scooped up water 
 in his right hand to get the crushed dolphin flesh off of 
@@ -3386,34 +1796,22 @@ he watched the first light come before the sunrise. He’s
 headed almost east, he thought. That means he is tired 
 and going with the current. Soon he will have to circle. 
 Then our true work begins. 
-
 After he judged that his right hand had been in the 
 water long enough he took it out and looked at it. 
-
 “It is not bad,” he said. “And pain does not matter 
 to a man.” 
-
 He took hold of the line carefully so that it did not 
-fit into any of the fresh line cuts and shifted his weight 
-
-
-
-The Old Man and the Sea 
-
 so that he could put his left hand into the sea on the 
 other side of the skiff. 
-
 “You did not do so badly for something worthless/’ 
 he said to his left hand. “But there was a moment 
 when I could not find you.” 
-
 Why was I not born with two good hands? he 
 thought. Perhaps it was my fault in not training that 
 one properly. But God knows he has had enough 
 chances to learn. He did not do so badly in the night, 
 though, and he has only cramped once. If he cramps 
 again let the line cut him off. 
-
 When he thought that he knew that he was not 
 being clear-headed and he thought he should chew 
 some more of the dolphin. But I can’t, he told himself. 
@@ -3423,26 +1821,15 @@ since my face was in it. I will keep it for an emergency
 until it goes bad. But it is too late to try for strength 
 now through nourishment. You’re stupid, he told him- 
 self. Eat the other flying fish. 
-
 It was there, cleaned and ready, and he picked it up 
 with his left hand and ate it chewing the hones care- 
 fully and eating all of it down to the tail. 
-
 It has more nourishment than almost any fish, he 
-
-
-85 
-
-
-The Old Man and the Sea 
-
 thought. At least the kind of strength that I need. Now 
 I have done what I can, he thought. Let him begin to 
 circle and let the fight come. 
-
 The sun was rising for the third time since he had 
 put to sea when the fish started to circle. 
-
 He could not see by the slant of the line that the 
 fish was circling. It was too early for that. He just felt 
 a faint slackening of the pressure of the line and be 
@@ -3455,98 +1842,61 @@ of his hands in a swinging motion and tried to do the
 pulling as much as he could with his body and his legs. 
 His old legs and shoulders pivoted with the swinging 
 of the pulling. 
-
 “It is a very big circle,” he said. “But he is circling.” 
-
 Then the line would not come in any more and he 
 held it until he saw the drops jumping from it in the 
 sun. Then it started out and the old man knelt down 
 and let it go grudgingly back into the dark water. 
-
 “He is making the far part of his circle now,” he 
 said. I must hold all I can, he thought. The strain will 
-
-
-86 
-
-
-The Old Man and the Sea 
-
 shorten his circle each time. Perhaps in an hour I will 
 see him. Now I must convince him and then I must 
 kill him. 
-
 But the fish kept on circling slowly and the old man 
 was wet with sweat and tired deep into his bones two 
 hours later. But the circles were much shorter now and 
 from the way the line slanted he could tell the fish had 
 risen steadily while he swam. 
-
 For an hour the old man had been seeing black spots 
 before his eyes and the sweat salted his eyes and salted 
 the cut over his eye and on his forehead. He was not 
 afraid of the black spots. They were normal at the ten- 
 sion that he was pulling on the line. Twice, though, 
 he had felt faint and dizzy and that had worried him. 
-
 “I could not fail myself and die on a fish like this,'’ 
 he said. “Now that I have him coming so beautifully, 
 God help me endure. I'll say a hundred Our Fathers 
 and a hundred Hail Marys. But I cannot say them 
 now.” 
-
 Consider them said, he thought. I’ll say them later. 
-
 Just then he felt a sudden banging and jerking on 
 the line he held with his two hands. It was sharp and 
 hard-feeling and heavy. 
-
 He is hitting the wire leader with his spear, he 
-
-
-87 
-
-
-The Old Man and the Sea 
-
-
 thought. That v;as bound to come. He had to do that. 
 It may make him jump though and I would rather he 
 stayed circling now. The jumps were necessary for him 
 to take air. But after that each one can widen the open- 
 ing of the hook wound and he can throw the hook. 
-
 “Don’t jump, fish,” he said. “Don’t jump.” 
-
 The fish hit the wire se^/eral times more and each 
 time he shook his head the old man gave up a little 
 line. 
-
 I must hold his pain where it is, he thought. Mine 
 does not matter. I can control mine. But his pain could 
 drive him mad. 
-
 After a while the fish stopped heating at the wire 
 and started circling slowly again. The old man was gain- 
 ing line steadily now. But he felt faint again. He lifted 
 soma sea water with his left hand and put it on his 
 head. Then he put more on and rubbed the back of his 
 neck. 
-
 “I have no cramps,” he said. “He’ll be up soon and I 
 can last. You have to last. Don’t even speak of it.” 
-
 He kneeled against the bow and, for a moment, 
 slipped the line over his back again. I’ll rest now while 
 he goes out on the circle and then stand up and work 
 on him when he comes in, he decided. 
-
-
-88 
-
-
-The Old Man and the Sea 
-
 It was a great temptation to rest in the bow and 
 let the fisb make one circle by himself without recov- 
 ering any line. But when the strain showed the 
@@ -3554,43 +1904,28 @@ fish had turned to come toward the boat, the old
 man rose to his feet and started the pivoting and 
 the weaving pulling that brought in all the line he 
 gained. 
-
 I’m tireder than I have ever been, he thought, and 
 now the trade wind is rising. But that will be good to 
 take him in with. I need that badly. 
-
 “I’ll rest on the next turn as he goes out,” he said. “I 
 feel much better. Then in two or three turns more I 
 will have him.” 
-
 His straw hat Vvas far on the back of his head and he 
 sank down into the bow with the pull of the line as he 
 felt the fish turn. 
-
 You v/ork now, fish, he thought. I’ll take you at the 
 turn. 
-
 The sea had risen considerably. But it was a fair- 
 weather breeze and he had to have it to get home. 
-
 “I’ll just steer south and west,” he said. “A man is 
 never lost at sea and it is a long island.” 
-
 It was on the third turn that he saw the fish first. 
-
 He saw him first as a dark shadow that took so long 
-
-
 89 
-
-
 The Old Man and the ^ Sea 
-
 to pass under the boat that he could not believe its 
 length, 
-
 "No,” he said. "He canh be that big.” 
-
 But he was that big and at the end of this circle 
 he came to the surface only thirty yards away and 
 the man saw his tail out of water. It was higher than 
@@ -3600,7 +1935,6 @@ swam just below the surface the old man could see his
 huge bulk and the purple stripes that banded him. 
 His dorsal fin was down and his huge pectorals were 
 spread wide. 
-
 On this circle the old man could see the fish’s eye 
 and the two gray sucking fish that swam around him. 
 Sometimes they attached themselves to him. Some- 
@@ -3608,113 +1942,73 @@ times they darted off. Sometimes they would swim
 easily in his shadow. They were each over three feet 
 long and when they swam fast they lashed their whole 
 bodies like eels. 
-
 The old man was sweating now hut from something 
 else besides the sun. On each calm placid turn the fish 
 made he was gaining line and he was sure that in two 
 turns more he would have a chance to get the harpoon 
 in. . 
-
-
-90 
-
-
-The Old Man and the Sea 
-
-
 But I must get him close, close, close, he thought. I 
 mustn’t try for the head. I must get the heart 
-
 “Be calm and strong, old man,” he said. 
-
 On the next circle the fish’s back was out but he was 
 a little too far from the boat. On the next circle he was 
 still too far away but he was higher out of water and 
 the old man was sure that by gaining some more line 
 he could have him alongside. 
-
 He had rigged his harpoon long before and its coil of 
 light rope was in a round basket and the end was made 
 fast to the bitt in the bow. 
-
 The fish was coming in on his circle now calm and 
 beautiful looking and only his great tail moving. The 
 old man pulled on him all that he could to bring him 
 closer. For just a moment the fish turned a little on his 
 side. Then he straightened himself and began another 
 circle. 
-
 “I moved him,” the old man said. “I moved him 
 then.” 
-
 He felt faint again now but he held on the great fish 
 all the strain that he could. I moved him, he thought. 
 Maybe this time I can get him over. Pull, hands, he 
 thought. Hold up, legs. Last for me, head. Last for me. 
 You never went. This time I’ll pull him over. 
-
-
-91 
-
-
-The Old Man and the Sea 
-
 But when he put all of his effort on, starting it well 
 out before the fish came alongside and pulling with all 
 his strength, the fish pulled part way over and then 
 righted himself and swam away. 
-
 “Fish," the old man said. “Fish, you are going to 
 have to die anyway. Do you have to kill me too?" 
-
 That way nothing is accomplished, he thought. His 
 mouth was too dry to speak but he could not reach for 
 the water now. I must get him alongside this time, he 
 thought. I am not good for many more turns. Yes you 
 are, he told himself. You’re good for ever. 
-
 On the next turn, he nearly had him. But again the 
 fish righted himself and swam slowly away. 
-
 You are killing me, fish, the old man thought. But 
 you have a right to. Never have I seen a greater, or 
 more beautiful, or a calmer or more noble thing than 
 you, brother. Come on and kill me. I do not care who 
 kills who. 
-
 Now you are getting confused in the head, he 
 thought. You must keep your head clear. Keep your 
 head clear and know how to suffer like a man. Or a 
 fish, he thought. ' 
-
 “Clear up, head," he said in a voice he could hardly 
 hear. “Clear up." 
-
-
-92 
-
-
-The Old Man and the Sea 
-
 Twice more it was the same on the turns. 
-
 I do not know, the old man thought. He had been 
 on the point of feeling himself go each time. I do not 
 know. But I will try it once more. 
-
 He tried it once more and he felt himself going 
 when he turned the fish. The fish righted himself and 
 swam off again slowly with the great tail weaving in 
 the air. 
-
 I’ll try it again, the old man promised, although his 
 hands were mushy now and he could only see well in 
 flashes. 
-
 He tried it again and it v.?as the same. So he thought, 
 and he felt himself going before he started; I will try 
 it once again. 
-
 He took all his pain and what was left of his 
 strength and his long gone pride and he put it against 
 the fish’s agony and the fish came over onto his side 
@@ -3722,31 +2016,20 @@ and swam gently on his side, his bill almost touching
 the planking of the skiff and started to pass the boat, 
 long, deep, wide, silver and barred with purple and in- 
 terminable in the water. 
-
 The old man dropped the line and put his foot on it 
 and lifted the harpoon as high as he could and drove it 
 down with all his strength, and more strength he had 
-
-
-93 
-
-
-The Old Man and the Sea 
-
-
 just summoned, into the fish’s side just behind the 
 great chest fin that rose high in the air to the altitude 
 of the man’s chest. He felt the iron go in and he 
 leaned on it and drove it further and then pushed all 
 his weight after it. 
-
 Then the fish came alive, with his death in him, and 
 rose high out of the water showing all his great length 
 and width and all his power and his beauty. He 
 seemed to hang in the air above the old man in the 
 skiff. Then he fell into the water with a crash that sent 
 spray over the old man and over all of the skiff. 
-
 The old man felt faint and sick and he could not see 
 well. But he cleared the harpoon line and let it run 
 slowly through his raw hands and, when he could see, 
@@ -3757,32 +2040,20 @@ with the red of the blood from his heart. First it was
 dark as a shoal in the, blue water that was more than a 
 mile deep. Then it spread like a cloud. The fish was 
 silvery and still and floated with the waves. 
-
 The old man looked carefully in the glimpse of vi- 
 sion that he had. Then he took two turns of the har- 
-
-
-94 
-
-
-The Old Man and the Sea 
-
-
 poon line around tlie bitt in the bow and laid his head 
 on his hands. 
-
 “Keep my head clear/’ he said against the wood of 
 the bow. “I am a tired old man. But I have killed this 
 fish which is my brother and now I must do the slave 
 work.” 
-
 Now I must prepare the nooses and the rope to lash 
 him alongside, he thought. Even if we were two and 
 swamped her to load him and bailed her out, this skiff 
 w’ould never hold him. I must prepare everything, then 
 bring him in and lash him well and step the mast and 
 set sail for home. 
-
 He started to pull the fish in to have him alongside 
 so that he could pass a line through his gills and out 
 his miouth and make his head fast alongside the bow. I 
@@ -3793,28 +2064,17 @@ When I pushed on the harpoon shaft the second time.
 Bring him in now and make him fast and get the noose 
 around his tail and another around his middle to bind 
 him to the skiff. 
-
 “Get to work, old man,” he said. He took a very 
-
-
-95 
-
-
-The Old Man and the Sea 
-
 small drink of the water. “There is very much slave 
 work to be done now that the fight is over.” 
-
 He looked up at the sky and then out to his fish. He 
 looked at the sun carefully. It is not much more than 
 noon, he thought. And the trade wind is rising. The 
 lines all mean nothing now. The boy and I will splice 
 them when we are home. 
-
 “Come on, fish,” he said. But the fish did not come. 
 Instead he lay there wallowing now in the seas and the 
 old man pulled the skiff up onto him. 
-
 When he was even with him and had the fish's head 
 against the bow he could not believe his size. But he 
 untied the harpoon rope from the bitt, passed it 
@@ -3829,27 +2089,20 @@ pale violet colour as his tail. They were wider than a
 man's hand with his fingers spread and the fish's eye 
 looked as detached as the mirrors in a periscope or as a 
 saint in a procession. 
-
-
 96 
-
-
 The Old Man and' the Sea 
-
 ‘It was the only way to kill him,” the old man said. 
 He was feeling better since the water and he knew he 
 would not go away and his head was clear. He’s over 
 fifteen hundred pounds the way he is, he thought. 
 Maybe much more. If he dresses out two-thirds of that 
 at thirty cents a pound? 
-
 “I need a pencil for that,” he said. “My head is not 
 that clear. But I think the great DiMaggio would be 
 proud of me today. I had no bone spurs. But the hands 
 and the back hurt truly.” I wonder what a bone spur 
 is, he thought. Maybe we have them without knowing 
 of it. 
-
 He made the fish fast to bow and stern and to the 
 middle thwart. He was so big it was like lashing a 
 much bigger skiff alongside. He cut a piece of line and 
@@ -3859,18 +2112,9 @@ ble. Then he stepped the mast and, with the stick that
 was his gaff and with his boom rigged, the patched sail 
 drew, the boat began to move, and half lying in the 
 stern he sailed south-west. 
-
 He did not need a compass to tell him where south- 
 west was. He only needed the feel of the trade wind 
 and the drawing of the sail. I better put a small line 
-
-
-97 
-
-
-The Old Man and the Sea 
-
-
 out with a spoon on it and try and get something to eat 
 and drink for the moisture. But he could not find a 
 spoon and his sardines were rotten. So he hooked a 
@@ -3882,7 +2126,6 @@ sand fleas. The old man pinched their heads off with
 his thumb and forefinger and ate them chewing up the 
 shells and the tails. They were very tiny but he knew 
 they were nourishing and they tasted good. 
-
 The old man still had two drinks of water in the 
 bottle and he used half of one after he had eaten the 
 shrimps. The skiflF was sailing well considering the 
@@ -3895,16 +2138,8 @@ had thought perhaps it was a dream. Then when he
 had seen the fish come out of the water and hang mo- 
 tionless in the sky before he fell, he was sure there was 
 some great strangeness and he could not believe it. 
-
-
-98 
-
-
-The Old Man and the Sea 
-
 Then he could not see well, although now he saw as 
 well as ever. 
-
 Now he knew there was the fish and his hands and 
 back were no dream. The hands cure quickly, he 
 thought. I bled them clean and the salt water will heal 
@@ -3921,22 +2156,13 @@ no question either. But they were sailing together
 lashed side by side and the old man thought, let him 
 bring me in if it pleases him. I am only Letter than him 
 through trickery and he meant me no harm. 
-
 They sailed well and the old man soaked his hands 
 in the salt water and tried to keep his head clear. 
 There were high cumulus clouds and enough cirrus 
 above them so that the old man knew the breeze would 
 last all night. The old man looked at the fish constantly 
-
-
-99 
-
-
-The Old Man and the Sea 
-
 to make sure it was true. It was an hour before the first 
 shark hit him. 
-
 The shark was not an accident. He had come up 
 from deep down in the water as the dark cloud of blood 
 had settled and dispersed in the mile deep sea. He had 
@@ -3945,7 +2171,6 @@ broke the surface of the blue water and was in the sun.
 Then he fell back into the sea and picked up the scent 
 and started swimming on the course the skiff and the 
 fish had taken. 
-
 Sometimes he lost the scent. But he would pick it up 
 again, or have just a trace of it, and he swam fast and 
 hard on the course. He was a very big Mako shark 
@@ -3960,14 +2185,6 @@ ter without wavering. Inside the closed double lip of
 his jaws all of his eight rows of teeth were slanted in- 
 wards. They were not the ordinary pyramid-shaped 
 teeth of most sharks. They were shaped like a man’s 
-
-
-loo 
-
-
-The Old Man and the Sea 
-
-
 fingers when they are crisped like claws . They were 
 nearly as long as the fingers of the old man and they 
 had razor-sharp cutting edges on both sides. This was a 
@@ -3975,14 +2192,12 @@ fish built to feed on all the fishes in the sea, that were
 so fast and strong and well armed that they had no 
 other enemy. Now he speeded up as he smelled the 
 fresher scent and his blue dorsal fin cut the water. 
-
 When the old man saw him coming he knew that 
 this was a shark that had no fear at all and would do 
 exactly what he wished. He prepared the harpoon and 
 made the rope fast while he watched the shark come 
 on. The rope was short as it lacked what he had cut 
 away to lash the fish. 
-
 The old man’s head was clear and good now and he 
 was full of resolution but he had little hope. It was too 
 good to last, he thought. He took one look at the great 
@@ -3990,18 +2205,12 @@ fish as he watched the shark close in. It might as well
 have been a dream, he thought. I cannot keep him 
 from hitting me but maybe I can get him. Dentuso, he 
 thought. Bad luck to your mother. 
-
 The shark closed fast astern and when he hit the 
 fish the old man saw his mouth open and his strange 
 eyes and the clicking chop of the teeth as he drove for- 
 ward in the meat just above the tail. The shark’s head 
-
 lOI 
-
-
 The Old Man and tht Sea 
-
-
 was out oi water and his back was coming out and the 
 old man could hear the noise of skin and flesh ripping 
 on the big fish when he rammed the harpoon down 
@@ -4014,7 +2223,6 @@ was the location of the brain and the old man hit it.
 He hit it with his blood mushed hands driving a good 
 harpoon with all his strength. He hit it without hope 
 but with resolution and complete malignancy. 
-
 The shark swung over and the old man saw his eye 
 was not alive and then he swung over once again, wrap- 
 ping himself in two loops of the rope. The old man 
@@ -4027,31 +2235,19 @@ ter when the rope came taut, shivered, and then
 snapped. The shark lay quietly for a little while on the 
 surface and the old man watched him. Then he went 
 down very slowly. 
-
-
-02 
-
-
-The Old Man and the Sea 
-
-
 “He took about forty pounds,” the old man said 
 aloud. He took my harpoon too and all the rope, he 
 thought, and now my fish bleeds again and there will 
 be others. 
-
 He did not like to look at the fish anymore since he 
 had been mutilated. When the fish had been hit it was 
 as though he himself were hit. 
-
 But I killed the shark that hit my fish, he thought. 
 And he was the biggest dentuso that I have ever seen. 
 And God knows that I have seen big ones. 
-
 It was too good to last, he thought. I wish it had 
 been a dream now and that I had never hooked the fish 
 and was alone in bed on the newspapers. 
-
 “But man is not made for defeat,” he said. “A man 
 can be destroyed but not defeated.” I am sorry that I 
 killed the fish though, he thought. Now the bad time 
@@ -4059,18 +2255,10 @@ is coming and I do not even have the harpoon. The
 dentuso is cruel and able and strong and intelligent. 
 But I was more intelligent than he was.' Perhaps not, 
 he thought. Perhaps I was only better armed. 
-
 “Don't think, old man,” he said aloud. “Sail on this 
 course and take it when it comes.” 
-
 But I must think, he thought. Because it is all I 
 have left. That and baseball. I wonder how the great 
-
-103 
-
-
-The Old Man and the Sea 
-
 DiMaggio would have liked the way I hit him in the 
 brain? It was no great thing, he thought. Any man 
 could do it. But do you think my hands v/ere as great a 
@@ -4079,38 +2267,24 @@ had anything wrong with my heel except the time the
 sting ray stung it when I stepped on him when swim- 
 ming and paralyzed the lower leg and made the un- 
 bearable pain. 
-
 “Think about something cheerful, old man,'’ he 
 said. “Every minute now you are closer to home. You 
 sail lighter for the loss of forty pounds.” 
-
 He knew quite well the pattern of what could hap- 
 pen when he reached the inner part of the current. But 
 there was nothing to be done now. 
-
 “Yes there is,” he said aloud. “I can lash my knife to 
 the butt of one of the oars.” 
-
 So he did that with the tiller under his arm and the 
 sheet of the sail under his foot. 
-
 “Now,” he said. “I am still an old man. But I am not 
 unarmed.” 
-
 The breeze was fresh now and he sailed on well. He 
 watched only the forward part of the fish and some of 
 his hope returned. 
-
-It is silly not to hope, he thought. Besides I believe 
-104 
-
-
-The Old Man and the Sea 
-
 it is a sin. Do not think about sin, be thought. There 
 are enough problems now without sin. Also I have no 
 understanding of it. 
-
 I have no understanding of it and I am not sure that 
 I believe in it. Perhaps it was a sin to kill the fish. I 
 suppose it was even though I did it to keep me alive 
@@ -4120,7 +2294,6 @@ there are people who are paid to do it. Let them think
 about it. You were born to be a fisherman as the fish 
 was born to be a fish. San Pedro was a fisherman as 
 was the father of the great DiMaggio. 
-
 But he liked to think about all things that he was 
 involved in and since there was nothing to read and he 
 did not have a radio, he thought much and he kept on 
@@ -4130,29 +2303,17 @@ him for pride and because you are a fisherman. You
 loved him when he was alive and you loved him after. 
 If you love him, it is not a sin to kill him. Or is it 
 more? 
-
 “You think too much, old man,” he said aloud. 
-
 But you enjoyed killing the dentuso, he thought. He 
 lives on the live fish as you do. He is not a scavenger 
-
-
-105 
-
-
-The Old Man and the Sea 
-
 nor just a moving appetite as some sharks are. He is 
 beautiful and noble and knows no fear of anything. 
-
 “I killed him in self-defense,” the old man said 
 aloud. “And I killed him well.” 
-
 Besides, he thought, everything kills everything else 
 in some way. Fishing kills me exactly as it keeps me 
 alive. The boy keeps me alive, he thought. I must not 
 deceive myself too much. 
-
 He leaned over the side and pulled loose a piece of 
 the meat of the fish where the shark had cut him. He 
 chewed it and noted its quality and its good taste. It was 
@@ -4161,7 +2322,6 @@ no stringiness in it and he knew that it would bring
 the highest price in the market. But these was no way 
 to keep its scent out of the water and the old man 
 knew that a very had time was coming. 
-
 The breeze was steady. It had backed a little further 
 into the north-east and he knew that meant that it 
 would not fall off. The old man looked ahead of him 
@@ -4170,22 +2330,14 @@ the smoke of any ship. There were only the flying fish
 that went up from his bow sailing away to either side 
 and the yellow patches of Gulf weed. He could not 
 even see a bird. 
-
-io6 
-
-
-The Old Man and the Sea 
-
 He had sailed for two hours, resting in the stern and 
 sometimes chewing a bit of the meat from the marlin, 
 trying to rest and to be strong, when he saw the first of 
 the two sharks. 
-
 “Ay," he said aloud. There is no translation for this 
 word and perhaps it is just a noise such as a man might 
 make, involuntarily, feeling the nail go through his 
 hands and into the wood. 
-
 “Galanos,” he said aloud. He had seen the second 
 fin now coming up behind the first and had identified 
 them as shovel-nosed sharks by the brown, triangular 
@@ -4193,7 +2345,6 @@ fin and the sweeping movements of the tail. They had
 the scent and were excited and in the stupidity of their 
 great hunger they were losing and finding the scent in 
 their excitement. But they were closing all the time. ^ 
-
 The old man made the sheet fast and jammed the 
 tiller. Then he took up the oar with the knife lashed to 
 it. He lifted it as lightly as he could because his hands 
@@ -4203,13 +2354,6 @@ they would take the pain now and would not flinch
 and watched the sharks come. He could see their wide, 
 flattened, shovel-pointed heads novv^ and their white- 
 tipped wide pectoral fins. They were hateful sharks, 
-
-
-107 
-
-
-The Old Man and the Sea 
-
 bad smelling, scavengers as well as killers, and when 
 they were hungry they would bite at an oar or the 
 rudder of a boat. It was these sharks that would cut the 
@@ -4217,10 +2361,8 @@ turtles^ legs and flippers off when the turtles were
 asleep on the surface, and they would hit a man in the 
 water, if they were hungry, even if the man had no 
 smell of fish blood nor of fish slime on him. 
-
 "Ay/' the old man said. "Galanos. Come on 
 galanos.** 
-
 They came. But they did not come as the Mako had 
 come. One turned and went out of sight under the 
 skiff and the old man could feel the skiff shake as he 
@@ -4234,16 +2376,8 @@ the knife on the oar into the juncture, withdrewit/and
 drove it in again into the shark s yellow catdike eyes. 
 The shark let go of the fish and slid down, /swallowing 
 what he had taken as he died. 
-
 The skiff was still shaking with the destruction the 
 other shark was doing to the fish and the old man let 
-
-io8 
-
-
-The Old Man and the Sea 
-
-
 go the sheet so that the skiff would swing broadside 
 and bring the shark out from under. When he saw the 
 shark he leaned over the side and punched at him. He 
@@ -4257,7 +2391,6 @@ blade and punched the shark exactly in the same spot
 again. He still hung to the fish with his jaws hooked 
 and the old man stabbed him in his left eye. The shark 
 still hung there. 
-
 “No?” the old man said and he drove the blade be- 
 tween the vertebrae and the brain. It was an easy shot 
 now and he felt the cartilage sever. The old man re- 
@@ -4266,16 +2399,9 @@ jaws to open them. He twisted the blade and as the
 shark slid loose he said, “Go on, galano. Slide down a 
 mile deep. Go see your friend, or maybe its your 
 mother.” 
-
 The old man wiped the blade of his knife and laid 
 down the oar. Then he found the sheet and the sail 
 filled and he brought the skiff onto her course. 
-
-109 
-
-
-The Old Man and the Sea 
-
 “They must have taken a quarter of him and of the 
 best meat/' he said aloud. “I wish it were a dream and 
 that I had never hooked him. I'm sorry about it, fish. It 
@@ -4283,14 +2409,11 @@ makes everything wrong." He stopped and he did not
 want to look at the fish now. Drained of blood and 
 awash he looked the colour of the silver hacking of a 
 mirror and his stripes still showed. 
-
 “I shouldn't have gone out so far, fish," he said. . 
 “Neither for you nor for me. I'm sorry, fish." 
-
 Now, he said to himself. Look to the lashing on the 
 knife and see if it has been cut. Then get your hand in 
 order because there still is more to come. 
-
 “I wish I had a stone for the knife," the old man 
 said after he had checked the lashing on the oar butt. 
 “I should have brought a stone." You should have 
@@ -4298,28 +2421,16 @@ brought many things, he thought. But you did not
 bring them, old man. Now is no time to think of what 
 you do not have. Think of what you can do with what 
 there is. 
-
 “You give me much good counsel," he said aloud. 
 “I'm tired of it." 
-
 He held the tiller under his arm and soaked both his 
 hands in the water as the skiff drove forward. 
-
 “God knows how much that last one took," he said. 
-
-
-I lO 
-
-
-The Old Man and the Sea 
-
-
 “But she’s much lighter now.” He did not want to 
 think of the mutilated under-side of the fish. He knew 
 that each of the jerking bumps of the shark had been 
 meat tom away and that the fish now made a trail for 
 all sharks as wide as a highway through the sea. 
-
 He was a fish to keep a man all winter, he thought. 
 Don’t think of that. Just rest and try to get your hands 
 in shape to defend what is left of him. The blood smell 
@@ -4327,77 +2438,51 @@ from my hands means nothing now with all that scent
 in the water. Besides they do not bleed much. There is 
 nothing cut that means anything. The bleeding may 
 keep the left from cramping. 
-
 What can I think of now? he thought. Nothing. I 
 must think of nothing and wait for the next ones. I 
 wish it had really been a dream, he thought. But who 
 knows? It might have turned out well. 
-
 The next shark that came was a single shovelnose. 
 He came like a pig to the trough if a pig had a mouth 
 so wide that you could put your head in it. The old 
 man let him hit the fish and then drove the knife on 
 the oar down into his brain. But the shark jerked back- 
 wards as he rolled and the knife blade snapped. 
-
 The old man settled himself to steer. He did not 
 even watch the big shark sinking slowly in the water, 
-
-1 1 1 
-
-
-The Old Man and the Sea 
-
 showing first life-size, then small, then tiny. That al- 
 ways fascinated the old man. But he did not even 
 watch it now. 
-
 “I have the gaff now,” he said. “But it will do no 
 good. I have the two oars and the tiller and the short 
 club.” 
-
 Now they have beaten me, he thought. I am too old 
 to club sharks to death. But I will try it as long as I 
 have the oars and the short club and the tiller. 
-
 He put his hands in the water again to soak them. It 
 was getting late in the afternoon and he saw nothing 
 but the sea and the sky. There was more wind in the 
 sky than there had been, and soon he hoped that he 
 would see land. 
-
 “You’re tired, old man,” he said. “You’re tired in- 
 side.” 
-
 The sharks did not hit him again until just before 
 sunset. 
-
 Tbe old man saw the brown fins coming along the 
 wide trail the fish must make in the water. They 
 were not even quartering on the scent. They were 
 headed straight for the skiff swimming side by side. 
-
 He jammed the tiller, made the sheet fast and 
 reached under the stern for the club. It was an oar han- 
-
-
-II2 
-
-
-The Old Man and the Sea 
-
-
 die from a broken oar sawed olf to about two and a half 
 feet in length. He could only use it effectively with 
 one band because of the grip of the handle and he took 
 good hold of it with his right hand, flexing his hand on 
 it, as he watched the sharks come. They were both ga- 
 lanos. 
-
 1 must let the first one get a good hold and hit him 
 on the point of the nose or straight across the top of the 
 head, he thought. 
-
 The two sharks closed together and as he saw the 
 one nearest him open his jaws and sink them into 
 the silver side of the fish, he raised the club high 
@@ -4407,92 +2492,58 @@ solidity as the club came down. But he felt the rigid-
 ity of bone too and he struck the shark once more 
 hard across the point of the nose as he slid down from 
 the fish. 
-
 The other shark had been in and out and now came 
 in again with his jaws wide. The old man could see 
 pieces of the meat of the fish spilling white from the 
 corner of his jaws as he bumped the fish and closed his 
-jaws. He swung at him and hit only the head and the 
-shark looked at him and wrenched the meat loose. The 
-
-
-The Old Man and the Sea 
-
 old man swung the club down on him again as he 
 slipped away to swallow and hit only the heavy solid 
 rubberiness. 
-
 “Come on, galano" the old man said. “Come in 
 again.” 
-
 The shark came in a rush and the old man hit him 
 as he shut his jaws. He hit him solidly and from as 
 high up as he could raise the club. This time he felt 
 the bone at the base of the brain and he hit him again 
 in the same place while the shark tore the meat loose 
 sluggishly and slid down from the fish. 
-
 The old man watched for him to come again but 
 neither shark showed. Then he saw one on the surface 
 swimming in circles. He did not see the fin of the 
 other. 
-
 1 could not expect to kill them, he thought. I could 
 have in my time. But I have hurt them both badly and 
 neither one can feel very good. If I could have used a 
 bat with two hands I could have killed the first one 
 surely. Even now, he thought. 
-
 He did not want to look at the fish. He knew that 
 half of him had been destroyed. The sun had gone 
 down while he had been in the fight with the sharks. 
-
 “It will be dark soon,” he said. “Then I should see 
-
-114 
-
-
-The Old Man and the Sea 
-
-
 the glow of Havana.. If I am too far to the eastward I 
 will see the lights of one of the new beaches.” 
-
 I cannot be too far out now, he thought. I hope no 
 one has been too worried. There is only the boy to 
 worry, of course. But I am sure he would have 
 confidence. Many of the older fishermen will worry. 
 Many others too, he thought. I live in a good town. 
-
 He could not talk to the fish anymore because the 
 fish had been ruined too badly. Then something came 
 into his head. 
-
 “Half fish,” he said. “Fish that you were. I am sorry 
 that I went too far out. I ruined us both. But we have 
 killed many sharks, you and I, and ruined many others. 
 How many did you ever kill, old fish? You do not have 
 that spear on your head for nothing.” 
-
 He liked to think of the fish and what he could do to 
 a shark if he were swimming free. I should have 
 chopped the bill off to fight them with, he thought. 
 But there was no hatchet and then there was no knife. 
-
 But if I had, and could have lashed it to an oar butt, 
 what a weapon. Then we might have fought themAo- 
 gether. What will you do now if they come in the 
 night? What can you do? 
-
 “Fight them,” he said. “Fll fight them until I die.” 
-
-
-5 
-
-
-The Old Man and the Sea 
-
-
 But in tKe dark now and no glow showing and no 
 lights and only the wind and the steady pull of the sail 
 he felt that perhaps he was already dead. He put his 
@@ -4501,35 +2552,22 @@ dead and he could bring the pain of life by simply
 opening and closing them. He leaned his back against 
 the stern and knew he was not dead. His shoulders 
 told him. 
-
 I have all those prayers I promised if I caught the 
 fish, he thought. But I am too tired to say them now. I 
 better get the sack and put it over my shoulders. 
-
 He lay in the stern and steered and watched for the 
 glow to come in the sky. I have half of him, he 
 thought. Maybe I’ll have the luck to bring the forward 
 half in. I should have some luck. No, he said. You vio- 
 lated your luck when you went too far outside. 
-
 “Don’t be silly,” he said aloud. “And keep awake 
 and steer. You may have much luck yet. 
-
 “I’d like to buy some if there’s any place they sell 
 it,” he said. 
-
 What could I buy it with? he asked himself. Could I 
 buy it with a lost harpoon and a broken knife and two 
 bad hands? 
-
-“You might,” he said. “You tried to buy it with 
-1 16 
-
-
-The Old Man and the Sea 
-
 eighty-four days at sea. They nearly sold it to you too.” 
-
 I must not think nonsense, he thought. Luck is a 
 thing that comes in many forms and who can recognize 
 her? I would take some though in any form and pay 
@@ -4538,7 +2576,6 @@ lights, he thought. I wish too many things. But that is
 the thing I wish for now. He tried to settle more com- 
 fortably to steer and from his pain he knew he was not 
 dead. 
-
 He saw the reflected glare of the lights of the city at 
 what must have been around ten o’clock at night. They 
 were only perceptible at first as the light is in the sky 
@@ -4547,22 +2584,15 @@ across the ocean which was rough now with the increas-
 ing breeze. He steered inside of the glow and he 
 thought that now, soon, he must hit the edge of the 
 stream. 
-
 Now it is over, he thought. They will probably hit 
 me again. But what can a man do against them in the 
 dark without a weapon? 
-
 He was stiff and sore now and his wounds and all of 
 the strained parts of his body hurt with the cold of the 
 night. I hope I do not have to fight again, he thought. I 
 hope so much I do not have to fight again. 
-
-
 117 
-
-
 The Old 'Man and the Sea 
-
 But by midnight he fought and this time he knew 
 the fight was useless. They came in a pack and he 
 could only see the lines in the water that their fins 
@@ -4572,14 +2602,12 @@ jaws chop and the shaking of the skiff as they took
 hold below. He clubbed desperately at what he could 
 only feel and hear and he felt something seize the club 
 and it was gone. 
-
 He jerked the tiller free from the rudder and beat 
 and chopped with it, holding it in both hands and driv- 
 ing it down again and again. But they were up to the 
 bow now and driving in one after the other and to- 
 gether, tearing off the pieces of meat that showed glow- 
 ing below the sea as they turned to come once more. 
-
 One came, finally, against the head itself and he 
 knew that it was over. He swung the tiller across the 
 shark’s head where the jaws were caught in the heavi- 
@@ -4588,25 +2616,14 @@ it once and twice and again. He heard the tiller break
 and he lunged at the shark with the splintered butt. 
 He felt it go in and knowing it was sharp he drove it in 
 again. The shark let go and rolled away. That was the 
-
-
-ii8 
-
-
-The Old Man and the Sea 
-
-
 last shark of the pack that came. There was nothing 
 more for them to eat. 
-
 The old man could hardly breathe now and he felt a 
 strange taste in his mouth. It was coppery and sweet 
 and he was afraid of it for a moment. But there was not 
 much of it. 
-
 He spat into the ocean and said, “Eat that, galanos. 
 And make a dream you’ve killed a man.” 
-
 He knew he was beaten now finally and without 
 remedy and he went back to the stern and found the 
 jagged end of the tiller would fit in the slot of the 
@@ -4622,22 +2639,13 @@ to them and did not pay any attention to anything ex-
 cept steering. He only noticed how lightly and how 
 well the skiff sailed now there was no great weight be- 
 side her. 
-
-119 
-
-
-The Old Man and the Sea 
-
-
 She’s good, he thought. She is sound and not 
 harmed in any way except ror the tiller. That is easily 
 replaced. 
-
 He could feel he was inside the current now and he 
 could see the lights of the beach colonies along the 
 shore. He knew where he was now and it was nothing 
 to get home. 
-
 The wind is our friend, anyway, he thought. Then 
 he added, sometimes. And the great sea with our 
 friends and our enemies. And bed, he thought. Bed is 
@@ -4645,9 +2653,7 @@ my friend. Just bed, he thought. Bed will be a great
 thing. It is easy when you are beaten, he thought. I 
 never knew how easy it was. And what beat you, he 
 thought. 
-
 “Nothing,” he said aloud. “I went out too far.” 
-
 When he sailed into the little harbour the lights of 
 the Terrace v;ere out and he knew everyone was in 
 bed. The ‘breeze^iad risen steadily and was blowing 
@@ -4656,14 +2662,6 @@ he sailed up onto the little patch of shingle below the
 rocks. There was no one to help him so he pulled the 
 boat up as far as he could. Then he stepped out and 
 made her fast to a rock. 
-
-
-20 
-
-
-The Old Man and the Sea 
-
-
 He unstepped the mast and furled the sail and tied 
 it. Then he shouldered the mast and started to climb. 
 It was then he knew the depth of his tiredness. He 
@@ -4673,7 +2671,6 @@ standing up well behind the skiff’s stern. He saw the
 white naked line of his backbone and the dark mass of 
 the head with the projecting bill and all the nakedness 
 between. 
-
 He started to climb again and at the top he fell and 
 lay for some time with the mast across his shoulder. He 
 tried to get up. But it was too difficult and he sat there 
@@ -4681,26 +2678,16 @@ with the mast on his shoulder and looked at the road.
 A cat passed on the far side going about its business 
 and the old man watched it. Then he just watched the 
 road. 
-
 Finally he put the mast down and stood up. He 
 picked the mast up and put it on his shoulder and 
 started up the road. He had to sit down five times be- 
 fore he reached his shack. 
-
 Inside the shack he leaned the mast against the wall. 
 In the dark he found a water bottle and took a drink. 
 Then he lay down on the bed. He pulled the blanket 
-
-
-21 
-
-
-The Old Man and the Sea 
-
 over his shoulders and then over his back and legs and 
 he slept face down on the newspapers with his arms 
 out straight and the palms of his hands up. 
-
 He was asleep when the boy looked in the door in 
 the morning. It was blowing so hard that the drifting- 
 boats would not be going out and the boy had slept late 
@@ -4710,179 +2697,102 @@ breathing and then he saw the old man’s hands and he
 started to cry. He went out very quietly to go to bring 
 some coffee and all the way down the road he was 
 crying. 
-
 Many fishermen were around the skiff looking at 
 what was lashed beside it and one was in the water, his 
 trousers rolled up, measuring the skeleton with a 
 length of line. 
-
 The boy did not go down. He had been there before 
 and one of the fishermen was looking after the skiff for 
 him. 
-
 ‘‘How is he?” one of the fishermen shouted. 
-
 “Sleeping,” the boy called. He did not care that 
 they saw him crying. “Let no one disturb him.” 
-
 “He was eighteen feet from nose to tail,” the fisher- 
 man who was measuring him called. 
-
-
-122 
-
-
-The Old Man and the Sea 
-
-
 “I believe it," the boy said. 
-
 He went into the Terrace and asked for a can of 
 coffee. 
-
 “Hot and with plenty of milk and sugar in it." 
-
 “Anything more?" 
-
 “No. Afterwards I will see what he can eat." 
-
 “What a fish it was," the proprietor said. “There has 
 never been such a fish. Those were two fine fish you 
 took yesterday too." 
-
 “Damn my fish," the boy said and he started to cry 
 again. 
-
 “Do you want a drink of any kind?" the proprietor 
 asked. 
-
 “No," the boy said. “Tell them not to bother Santi- 
 ago. ril be back." 
-
 “Tell him how sorry I am." 
-
 “Thanks," the boy said. 
-
 The boy carried the hot can of coffee up to the 
 old man’s shack and sat by him until he woke. 
 Once it looked as though he were waking. But he 
 had gone back into heavy sleep and the boy had 
 gone across the road to borrovtZ some wood to heat the 
 coffee. 
-
 Finally the old man woke. 
-
-
-123 
-
-
-The Old Man and the. Sea 
-
 “Don't sit up," the boy said. “Drink this." He 
 poured some of the coffee in a glass. 
-
 The old man took it and drank it. 
-
 “They beat me, Manolin," he said. “They truly beat 
 me." 
-
 “He didn’t beat you. Not the fish." 
-
 “No. Truly. It was afterwards." 
-
 “Pedrico is looking after the skiff and the gear. 
 What do you want done with the head?" 
-
 “Let Pedrico chop it up to use in fish traps." 
-
 “And the spear?" 
-
 “You keep it if you want it." 
-
 “I want it," the boy said. “Now we must make our 
 plans about the other things." 
-
 “Did they search for me?" 
-
 “Of course. With coast guard and with planes." 
-
 “The ocean is very big and a skiff is small and hard 
 to see," the old man said. He noticed how pleasant it 
 was to have someone to talk to instead of speaking only 
 to himself and to the sea. “I missed you," he said. 
 “What did you catch?" 
-
 “One the first day. One the second and two the 
 third." 
-
-
-124 
-
-
-The Old Man and the Sea 
-
 ‘Very good." 
-
 “Now we fish together again." 
-
 “No. I am not lucky. I am not lucky anymore." 
-
 “The hell with luck," the boy said. “I’ll bring the 
 luck with me." 
-
 “What will your family say?" 
-
 “I do not care. I caught two yesterday. But we will 
 fish together now for I still have much to learn." 
-
 “We must get a good killing lance and always have 
 it on board. You can make the blade from a spring leaf 
 from an old Ford. We can grind it in Guanabacoa. It 
 should be sharp and not tempered so it will break. My 
 knife broke." 
-
 “I’ll get another knife and have the spring ground. 
 How many days of heavy hrisa have we?" 
-
 “Maybe three. Maybe more." 
-
 “I will have everything in order," the boy said. “You 
 get your hands well old man." 
-
 “I know how to care for them. In the night I spat 
 something strange and felt something in my chest was 
 broken.” 
-
 “Get that well too," the boy said. “Lie down, old 
 man, and I will bring you your clean shirt. And some- 
 thing to eat.” 
-
-
-125 
-
-
-The Old Man and the Sea 
-
 “Bring any of the papers of the time that I was 
 gone,” the old man said. 
-
 “You must get well fast for there is much that I can 
 learn and you can teach me everything. How much did 
 you suffer?” 
-
 “Plenty,” the old man said. 
-
 “Fll bring the food and the papers,” the boy said. 
 “Rest well, old man. I will bring stuff from the drug- 
 store for your hands.” 
-
 “Don’t forget to tell Pedrico the head is his.” 
-
 “No. I will remember.” 
-
 As the boy went out the door and down the worn 
 coral rock road he was crying again. 
-
 That afternoon there was a party of tourists at the 
 Terrace and looking down in the water among the 
 empty beer cans and dead barracudas a woman saw a 
@@ -4890,173 +2800,15 @@ great long white spine with a huge tail at the end that
 lifted and swung with the tide while the east wind 
 blew a heavy steady sea outside the entrance to the har- 
 bour. 
-
 “What’s that?” she asked a waiter and pointed to the 
 long backbone of the great fish that was now just gar- 
 bage waiting to go out with the tide. 
-
-
-126 
-
-
-DC 
-
-
-The Old Man and the Sea 
-
 “Tiburon," the waiter said. “Eshark." He was mean- 
 ing to explain what had happened. 
-
 “I didn't know sharks had such handsome, beauti- 
 fully formed tails." 
-
 “I didn't either," her male companion said. 
-
 Up the road, in his shack, the old man was sleeping 
 again. He was still sleeping on his face and the boy 
 was sitting by him watching him. The old man was 
 dreaming about the lions. 
-
-
-127 
-
-
-
-PS 3515 E5 04 1952 C-2 
-HEMINGWAY ERNEST 1899-19B1 
-THE OLD HAN AND THE SEA 
-
-
-39447197 CURR 
-
-
-
-PS 3515 E5 04 1952 C. 2 
-Hemingway, Ernes t, 1 899-196 1 • 
-The old man and the sea / 
-
-
-394471 97 CURR 
-
-
-
-</pre>        </div><!--/.container-->
-              </main>
-    </div><!--/#wrap-->
-    
-    
-    <!-- Timing ...
-     rendered on: www18.us.archive.org
- seconds diff sec               message   stack(file:line:function)
-=========================================================
-  0.0000   0.0000         petabox start   var/cache/petabox/petabox/www/sf/download.php:1:require
-                                             |common/ia:66:require_once
-                                             |setup.php:310:log
-  0.0090   0.0090      redis_read start   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:328:getItem
-                                             |common/Item.inc:77:parseMetadata
-                                             |Item.inc:132:get_obj
-                                             |Metadata.inc:489:_get_obj
-                                             |Metadata.inc:519:run_pipeline
-                                             |Metadata.inc:1426:read
-                                             |Metadata/AdapterPipeline.inc:259:_read
-                                             |AdapterPipeline.inc:292:pipeline
-                                             |AdapterPipeline.inc:377:fetch
-                                             |AdapterPipeline.inc:608:fetch
-                                             |RecordServer.inc:144:execute
-                                             |RecordServer/FetchRecordOp.inc:52:log
-  0.0129   0.0039     redis_read finish   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:328:getItem
-                                             |common/Item.inc:77:parseMetadata
-                                             |Item.inc:132:get_obj
-                                             |Metadata.inc:489:_get_obj
-                                             |Metadata.inc:519:run_pipeline
-                                             |Metadata.inc:1426:read
-                                             |Metadata/AdapterPipeline.inc:259:_read
-                                             |AdapterPipeline.inc:292:pipeline
-                                             |AdapterPipeline.inc:377:fetch
-                                             |AdapterPipeline.inc:608:fetch
-                                             |RecordServer.inc:144:execute
-                                             |RecordServer/FetchRecordOp.inc:58:log
-  0.0277   0.0148   begin session_start   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:542:stream
-                                             |download.php:954:head
-                                             |common/Nav.inc:119:__construct
-                                             |Nav.inc:187:session_start
-                                             |Cookies.inc:56:log
-  0.0279   0.0002    done session_start   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:542:stream
-                                             |download.php:954:head
-                                             |common/Nav.inc:119:__construct
-                                             |Nav.inc:187:session_start
-                                             |Cookies.inc:62:log
-  0.0340   0.0061      call get_redis()   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:542:stream
-                                             |download.php:954:head
-                                             |common/Nav.inc:119:__construct
-                                             |Nav.inc:225:v2
-                                             |Nav.inc:605:render
-                                             |Banner.inc:59:get_public_banner
-                                             |Banner.inc:20:get_obj_part
-                                             |Metadata.inc:811:_get_obj_part
-                                             |Metadata.inc:850:get_json_obj
-                                             |Metadata.inc:2279:log
-  0.0344   0.0004      redis_read start   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:542:stream
-                                             |download.php:954:head
-                                             |common/Nav.inc:119:__construct
-                                             |Nav.inc:225:v2
-                                             |Nav.inc:605:render
-                                             |Banner.inc:59:get_public_banner
-                                             |Banner.inc:20:get_obj_part
-                                             |Metadata.inc:811:_get_obj_part
-                                             |Metadata.inc:850:get_json_obj
-                                             |Metadata.inc:2309:fetch
-                                             |Metadata/RecordServer.inc:144:execute
-                                             |RecordServer/FetchRecordOp.inc:52:log
-  0.0392   0.0047     redis_read finish   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:542:stream
-                                             |download.php:954:head
-                                             |common/Nav.inc:119:__construct
-                                             |Nav.inc:225:v2
-                                             |Nav.inc:605:render
-                                             |Banner.inc:59:get_public_banner
-                                             |Banner.inc:20:get_obj_part
-                                             |Metadata.inc:811:_get_obj_part
-                                             |Metadata.inc:850:get_json_obj
-                                             |Metadata.inc:2309:fetch
-                                             |Metadata/RecordServer.inc:144:execute
-                                             |RecordServer/FetchRecordOp.inc:58:log
-  0.1758   0.1366              bug dump   var/cache/petabox/petabox/www/sf/download.php:86:main_wrap
-                                             |download.php:107:main
-                                             |download.php:542:stream
-                                             |download.php:984:footer
-                                             |common/setup.php:156:footer
-                                             |Nav.inc:1481:dump
-                                             |Bug.inc:102:log
-    -->
-    <script type="text/javascript">
-if (window.archive_analytics) {
-  var vs = window.archive_analytics.get_data_packets();
-  for (var i in vs) {
-    vs[i]['cache_bust']=Math.random();
-    vs[i]['server_ms']=175;
-    vs[i]['server_name']="www18.us.archive.org";
-      }
-
-  if ($(".more_search").size()>0) {
-    window.archive_analytics.send_scroll_fetch_base_event();
-  }
-}
-</script>
-      </div>
-  </body>
-</html>
-    

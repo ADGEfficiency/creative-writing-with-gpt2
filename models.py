@@ -6,16 +6,17 @@ models = {
     'bible': '1x8SQgqZyLGRdHRV6BUIHEPxZuWUCyhRc',
     'harry': '1-3iQhw89Biyv1QMf4o2BEahoPX9g3fNd',
     'meditations': '1-9TiibA0_dqD7dqyJnBNBrZnLuegAa_E',
-    'tolkien': '1-0lq9cGClSqcvcI3WqGkxdmAdoWrhD4e'
+    'tolkien': '1-0lq9cGClSqcvcI3WqGkxdmAdoWrhD4e',
+    'asimov': '1yg4bORU_KpV4h_aVnbMaekulK6ShpCS1'
 }
 
 
-def download_pretrained_model(model_name):
+def download_pretrained_model(model_name, prefix='.'):
     print('downloading {}'.format(model_name))
     drive_id = models[model_name]
     gdd.download_file_from_google_drive(
         file_id=drive_id,
-        dest_path='./models/{}.zip'.format(model_name),
+        dest_path='{}/models/{}.zip'.format(prefix, model_name),
         unzip=True
     )
 
