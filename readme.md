@@ -1,18 +1,20 @@
-# Creative writing with GPT2
+# Creative writing with GPT-2
 
-[Quickly get started on Google Colab](https://colab.research.google.com/drive/1sNtF6Z9U_fXIIZHfJqpZVr_-vh3Ki8GN).
+[Quickly get started with a notebook on Google Colab](https://colab.research.google.com/drive/1sNtF6Z9U_fXIIZHfJqpZVr_-vh3Ki8GN).
 
-One of 2019's most important machine learning stories is the progress of using transfer learning on massive language models (such as Open AI's- GPT2 or Google's BERT).
+One of 2019's most important machine learning stories is the progress of using transfer learning on massive language models.
 
-We have been experimenting with retraining GPT2 on authors we like, and using the model as a writing partner. The process has been enlightening, and points towards a future where human and machine can write creatively together.
+I have been experimenting with retraining GPT-2 on authors we like, and using the model as a writing partner. The process has been enlightening, and points towards a future where human and machine can write creatively together.
 
-[You can see examples of text generation from some of the finetuned models here](https://github.com/ADGEfficiency/creative-writing-with-gpt2/tree/master/examples/examples.md).
+[You can see examples of text generation from some of the finetuned models here](https://github.com/ADGEfficiency/creative-writing-with-gpt2/tree/master/examples/).
+
+This library wraps around [the excellent Hugging Face Transformers library](https://github.com/huggingface/transformers).  Two of the scripts have been copied into this repo - `run_generation` and `run_lm_finetuning`, [both of which can be found here](https://github.com/huggingface/transformers/tree/master/examples).
+
+## How to write creatively with GPT-2
 
 GPT-2 is not ready to write text on it's own - but with a bit of human supervision you can use the text it generates to write interesting text!  
 
-GPT2 was originally trained on 40 GB of text from Wikipedia & news articles.  This library can be used to generate text with the base GPT2 model and to fine tune the base GPT2 model to text of your choosing.
-
-This library wraps around the excellent Hugging Face Transformers library.  Two of the scripts have been copied into this repo - `run_generation` and `run_lm_finetuning`, [both of which can be found here](https://github.com/huggingface/transformers/tree/master/examples).
+GPT-2 was originally trained on 40 GB of text from Wikipedia & news articles.  This library can be used to generate text with the base GPT-2 model and to fine tune the base GPT-2 model to text of your choosing.
 
 The library has a number of datasets in `creative-writing-with-gpt2/data`.  A dataset is defined as a text file called `clean.txt` - for example `asimov/clean.txt`.
 
@@ -36,7 +38,7 @@ A number of pre-fine-tuned models are available in `creative-writing-with-gpt2/m
 
 The recommended way to interact with this repo is [through this Google Colab notebook](https://colab.research.google.com/drive/1sNtF6Z9U_fXIIZHfJqpZVr_-vh3Ki8GN) - the free GPU is useful for fine-tuning.
 
-## To run locally
+## Run locally
 
 ```bash
 git clone https://github.com/ADGEfficiency/creative-writing-with-gpt2
