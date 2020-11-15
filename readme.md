@@ -8,11 +8,16 @@ I have been experimenting with retraining GPT-2 on authors we like, and using th
 
 [You can see examples of text generation from some of the finetuned models here](https://github.com/ADGEfficiency/creative-writing-with-gpt2/tree/master/examples/).
 
-This library wraps around [the excellent Hugging Face Transformers library](https://github.com/huggingface/transformers).  Two of the scripts have been copied into this repo - `run_generation` and `run_lm_finetuning`, [both of which can be found here](https://github.com/huggingface/transformers/tree/master/examples).
+Dependencies
+- [Hugging Face Transformers](https://github.com/huggingface/transformers) at version [2.2.1](https://github.com/huggingface/transformers/tree/v2.2.1) - I wrap around `examples/run_generation.py` and `examples/run_lm_finetuning.py` (these no longer exist in the same place in later versions of HuggingFace)
+- [googledrivedownloader](https://github.com/ndrplz/google-drive-downloader) to get pre fine-tuned models from my GoogleDrive
+
 
 ## How to write creatively with GPT-2
 
 GPT-2 is not ready to write text on it's own - but with a bit of human supervision you can use the text it generates to write interesting text!  
+
+Be fair to your machine colleague, if a sentence can work without modification, use it. Don't be afraid to correct it.  Typical mistakes are repetition of the same object in different forms
 
 GPT-2 was originally trained on 40 GB of text from Wikipedia & news articles.  This library can be used to generate text with the base GPT-2 model and to fine tune the base GPT-2 model to text of your choosing.
 

@@ -2,13 +2,13 @@ Written with the `alan-watts` (4 epochs) finetuned model.
 
 ---
 
-The idea behind the wisdom of our ancestors was the sword; meant for use in war. The sword was of great power, able to annihilate any enemy. It was divine knowledge. Imperial literature contains very powerful stories of emperor Anu using the sword.
+The wisdom of our ancestors was the sword; meant for use in war. The sword was of great power, able to annihilate any enemy. It was divine knowledge. Imperial literature contains stories of emperor Anu using the sword.
 
-It was the downfall of Zhou that demonstrated the total power of the universe.  That power was sound, the sound of the subtle understanding of light from above and it's change into darkness.
+It was the downfall of Zhou that demonstrated the total power of the sword.  That power was sound, the sound of the subtle understanding of light and it's change into darkness.
 
-Zhou pointed to him from behind and said "I am Zhou Enlai".  Who knew the ghastliness of death?  Anu threw away her life - her blade left the shore.  Seeing the power of Chinese words, she was thrown into the river.
+Zhou pointed to him and said "I am Zhou Enlai".  Who knew the ghastliness of death?  Anu threw away her life - her blade left the shore.  Seeing the power of Chinese words, she was thrown into the river.
 
-The Western World is all that is left of the Emperor.  Within all the images of Christianity, he built a new republic.  There was something fundamentally wrong with the West.  We resist the Western occupation.  We are content to live by a dream.  
+The Western World is all that is left of the Emperor.  Within all the images of Christianity, they built a new republic.  There is something fundamentally wrong with the West.  We resist the Western occupation.  We are content to live by a dream.  
 
 We withdraw our efforts from conflict.  We seek to go beyond this purely selfish world. We live by the idea that we can achieve nothing.  You are not going to survive this terrible Chinese society.  The time for being civilized is over.
 
@@ -16,7 +16,7 @@ Seek to go beyond your limitations. This is the most dangerous fruit, but you ca
 
 It doesn't make sense to give up one's compassion, only one's consciousness.  This is the great concept of the Buddhists - how you explain the illusion of human nature.
 
-You can think of an awareness that goes beyond the gate.  Long distance soldiers that can do their duty properly.  The Dukes of the New World, who destroy any ships they come across.  They recognize their place as a great mystery, freed from the illusory truth, sacred and separate from vast reality.
+You can think of an awareness that goes beyond the gate.  Soldiers that do their duty properly.  The Dukes of the New World, who destroy any ships they come across.  They recognize their place as a great mystery, freed from the illusory truth, sacred and separate from vast reality.
 
 One of the first things he asked was this: Why was there a tree? And it is as if I got an answer.  That tree had some kind of magical shape, and everybody here used to think it was something strange.  You didn't hold your hand out all the time. You didn't allow the sun to hit your head, you didn't control the wind, you weren't teaching people the way to work.
 
@@ -28,7 +28,4 @@ After she found out she was leaving, and that was it; she remembered all sorts o
 
 I was called to preach about the necessity of God and salvation, to a crowd of people who dont believe in that doctrine.  They say, Hey, you ain't a prophet. You got to give up the mystery. Why in the world do you believe in God? What are you praying for?
 
-Who do you pray for? And, when you feel confused, where is the light? And, you are asking, how can we pray for our liberation?  Then you will become lost.  When you experience the solitude of present-day childhood, however, you will see that there is a light in your dream. Like a light shining through the screen, you see that light in the center of the screen is light. In your dreams, you come across this light.
-
-When it appears, it hides. When it hears, it returns. 
-
+Who do you pray for? And, when you feel confused, where is the light? And, you are asking, how can we pray for our liberation?  Then you will become lost.  When you experience the solitude of present-day childhood, however, you will see that there is a light in your dream. You see that light in the center. In your dreams, you come across this light.

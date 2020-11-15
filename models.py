@@ -23,6 +23,12 @@ def download_pretrained_model(model_name, prefix='.'):
         unzip=True
     )
 
+
+def download_models(models, prefix='/content/creative'):
+    for model in models:
+        download_pretrained_model(model, prefix=prefix)
+
+
 if __name__ == '__main__':
     for key in models.keys():
         download_pretrained_model(key)
