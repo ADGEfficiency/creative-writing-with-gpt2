@@ -14,19 +14,23 @@ models = {
 }
 
 
-def download_pretrained_model(model_name, prefix='.'):
-    print('downloading {}'.format(model_name))
-    drive_id = models[model_name]
+def download_from_gdrive(name, drive_id, prefix):
+    print('downloading {}'.format(name))
     gdd.download_file_from_google_drive(
         file_id=drive_id,
-        dest_path=join(prefix, 'models', '{}.zip'.format(model_name) ),
+        dest_path=join(prefix, '{}.zip'.format(name)),
         unzip=True
     )
 
 
-def download_models(models, prefix='/content/creative'):
-    for model in models:
-        download_pretrained_model(model, prefix=prefix)
+def download_models(models, prefix='/content/creative/models'):
+    for name in models:
+        drive_id = models[name]
+        download_from_gdrive(
+            name=model,
+            drive_id=models[name],
+            prefix=prefix
+        )
 
 
 if __name__ == '__main__':
