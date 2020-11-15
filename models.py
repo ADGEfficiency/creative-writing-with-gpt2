@@ -14,16 +14,28 @@ models = {
 }
 
 
-def download_from_gdrive(name, drive_id, prefix):
+def download_from_gdrive(
+    name,
+    drive_id,
+    prefix,
+    suffix='zip',
+    unzip=True
+):
     print('downloading {}'.format(name))
+
+    if 'zip' not in suffix:
+        unzip = False
     gdd.download_file_from_google_drive(
         file_id=drive_id,
-        dest_path=join(prefix, '{}.zip'.format(name)),
-        unzip=True
+        dest_path=join(
+            prefix,
+            f'{name}.{suffix}'
+        ),
+        unzip=unzip
     )
 
 
-def download_models(models, prefix='/content/creative/models'):
+def download_models(models, prefix):
     for name in models:
         drive_id = models[name]
         download_from_gdrive(
