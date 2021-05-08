@@ -18,8 +18,8 @@ def download_from_gdrive(
     name,
     drive_id,
     prefix,
+    unzip
     suffix='zip',
-    unzip=True
 ):
     print('downloading {}'.format(name))
 
@@ -29,16 +29,17 @@ def download_from_gdrive(
             prefix,
             f'{name}.{suffix}'
         ),
-        unzip='zip' not in suffix
+        unzip=unzip
     )
 
 
-def download_models(models, prefix='./models'):
+def download_models(models, prefix='./models', unzip=False):
     for name, drive_id in models.items():
         download_from_gdrive(
             name=name,
             drive_id=drive_id,
-            prefix=prefix
+            prefix=prefix,
+            unzip=unzip
         )
 
 
