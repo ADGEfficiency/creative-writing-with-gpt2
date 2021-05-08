@@ -43,26 +43,37 @@ A number of pre-fine-tuned models are available in `creative-writing-with-gpt2/m
 
 The recommended way to interact with this repo is [through this Google Colab notebook](https://colab.research.google.com/drive/1sNtF6Z9U_fXIIZHfJqpZVr_-vh3Ki8GN) - the free GPU is useful for fine-tuning.
 
-## Run locally
+## Run Locally
 
 ```bash
 git clone https://github.com/ADGEfficiency/creative-writing-with-gpt2
 cd creative-writing-with-gpt2
 pip install -r requirements.txt
-python models.py
+```
+
+Download pretrained models:
+
+```bash
+$ python models.py
+```
+
+You will then need to unzip the model you want to use:
+
+```bash
+$ unzip models/tolkien.zip -d models
 ```
 
 To run the text generation with fine-tuned model (either downloaded from running `python gdrive_models.py` or from training yourself.
 
 ```bash
-python run_generation.py \
+$ python run_generation.py \
   --model_type=gpt2 \
   --model_name_or_path="./models/tolkien" \
   --length=200
 ```
 
 ```bash
-python run_lm_finetuning.py \
+$ python run_lm_finetuning.py \
   --output_dir="./models/harry" \
   --model_type=gpt2 \
   --model_name_or_path=gpt2 \
@@ -76,7 +87,7 @@ python run_lm_finetuning.py \
 To run the text generation with the base GPT2 model:
 
 ```bash
-python run_generation.py \
+$ python run_generation.py \
   --model_type=gpt2 \
   --model_name_or_path="models/gpt2" \
   --length=200

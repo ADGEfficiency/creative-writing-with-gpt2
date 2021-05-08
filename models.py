@@ -23,28 +23,24 @@ def download_from_gdrive(
 ):
     print('downloading {}'.format(name))
 
-    if 'zip' not in suffix:
-        unzip = False
     gdd.download_file_from_google_drive(
         file_id=drive_id,
         dest_path=join(
             prefix,
             f'{name}.{suffix}'
         ),
-        unzip=unzip
+        unzip='zip' not in suffix
     )
 
 
-def download_models(models, prefix):
-    for name in models:
-        drive_id = models[name]
+def download_models(models, prefix='./models'):
+    for name, drive_id in models.items():
         download_from_gdrive(
-            name=model,
-            drive_id=models[name],
+            name=name,
+            drive_id=drive_id,
             prefix=prefix
         )
 
 
 if __name__ == '__main__':
-    for key in models.keys():
-        download_pretrained_model(key)
+    download_models(models)
