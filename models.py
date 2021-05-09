@@ -18,7 +18,7 @@ def download_from_gdrive(
     name,
     drive_id,
     prefix,
-    unzip
+    unzip,
     suffix='zip',
 ):
     print('downloading {}'.format(name))
