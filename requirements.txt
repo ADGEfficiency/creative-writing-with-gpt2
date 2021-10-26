@@ -1,6 +1,1 @@
-requests
-jupyterlab
-bs4
-transformers==2.1.1
-googledrivedownloader
-torch==1.8.1
+transformers==4.11.3
