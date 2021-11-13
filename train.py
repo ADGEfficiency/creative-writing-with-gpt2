@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from transformers import AutoTokenizer, GPT2Tokenizer, GPT2Config, GPT2Model, GPT2LMHeadModel
 from transformers import TrainingArguments
 from transformers import Trainer
@@ -9,27 +11,29 @@ from datasets import load_dataset, Dataset
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 tokenizer.pad_token = tokenizer.eos_token
 
-from pathlib import Path
 data = (Path.cwd() / 'data/alan-watts/clean.txt').read_text()
 
+#  clean.txt is a single line
+#  splitting here helps
 step = 1024
 data = [data[n:n+1024] for n in range(0, len(data), 1024)]
-
 ds = Dataset.from_dict({'text': data})
-ds = ds.map(lambda d: tokenizer(d["text"]), batched=False)
+
+#  batched actually runs the map in batch - doesn't batch the data (was confusing!)
+ds = ds.map(lambda d: tokenizer(d["text"]), batched=True)
 
 cfg = GPT2Config()
-
 #  need to use this rather than GPT2Model
 #  https://huggingface.co/transformers/model_doc/gpt2.html
 model = GPT2LMHeadModel.from_pretrained("gpt2")
 
 training_args = TrainingArguments(
-    "test_trainer",
+    output_dir="test_trainer",
     per_device_train_batch_size=2,
     per_device_eval_batch_size=2,
+    save_strategy="epoch",
+    num_train_epochs=1
 )
-
 
 #  https://github.com/huggingface/notebooks/blob/master/examples/language_modeling.ipynb
 dc = DataCollatorForLanguageModeling(
@@ -39,5 +43,9 @@ dc = DataCollatorForLanguageModeling(
 trainer = Trainer(
     model=model, args=training_args, train_dataset=ds, data_collator=dc
 )
-
+tokenizer.save_pretrained('tokenizer')
 trainer.train()
+
+from evaluate import evaluate
+
+evaluate(model, tokenizer)
