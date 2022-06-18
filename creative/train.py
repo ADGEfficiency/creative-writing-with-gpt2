@@ -49,8 +49,7 @@ def main(
     epochs: int,
     base_model: None = None
 ):
-
-    data = fi.read_text()
+    data = author.read_text()
     #  I wonder if I can not do this here...
     #  just pass in a big string to the DataCollator ?
     data = data.replace('\n', '')
