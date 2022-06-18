@@ -17,7 +17,7 @@ def evaluate(tokenizer, model, data, max_length=24):
     return tokenizer.decode(out[0], skip_special_tokens=True, clean_up_tokenization_spaces=True)
 
 
-def load(output_dir=None):
+def load_checkpoint(output_dir=None):
 
     if output_dir is not None:
         output_dir = Path(output_dir)

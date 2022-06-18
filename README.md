@@ -47,9 +47,9 @@ $ make pulls3
 ```
 
 
-## Train
+## Fine Tuning
 
-You can train your own model as well: 
+You can fine-tune your own model as well: 
 
 ```shell
 $ python train.py harry
