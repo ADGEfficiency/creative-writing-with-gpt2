@@ -8,44 +8,60 @@ from transformers import DataCollatorForLanguageModeling
 
 from datasets import load_dataset, Dataset
 
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-tokenizer.pad_token = tokenizer.eos_token
+import click
+from evaluate import evaluate, load
 
-data = (Path.cwd() / 'data/alan-watts/clean.txt').read_text()
 
-#  clean.txt is a single line
-#  splitting here helps
-step = 1024
-data = [data[n:n+1024] for n in range(0, len(data), 1024)]
-ds = Dataset.from_dict({'text': data})
+def train_gpt2(ds, output_dir, epochs, base_model=None):
+    model = load(base_model)
 
-#  batched actually runs the map in batch - doesn't batch the data (was confusing!)
-ds = ds.map(lambda d: tokenizer(d["text"]), batched=True)
+    tokenizer = model['tokenizer']
+    cfg = model['cfg']
+    mdl = model['mdl']
 
-cfg = GPT2Config()
-#  need to use this rather than GPT2Model
-#  https://huggingface.co/transformers/model_doc/gpt2.html
-model = GPT2LMHeadModel.from_pretrained("gpt2")
+    #  batched=True actually runs the map in batch - doesn't batch the data (was confusing!)
+    ds = ds.map(lambda d: tokenizer(d["text"], truncation=True), batched=True)
 
-training_args = TrainingArguments(
-    output_dir="test_trainer",
-    per_device_train_batch_size=2,
-    per_device_eval_batch_size=2,
-    save_strategy="epoch",
-    num_train_epochs=1
-)
+    #  need to use this rather than GPT2Model
+    #  https://huggingface.co/transformers/model_doc/gpt2.html
+    training_args = TrainingArguments(
+        output_dir=output_dir,
+        overwrite_output_dir=True,
+        per_device_train_batch_size=1,
+        per_device_eval_batch_size=1,
+        save_strategy="epoch",
+        num_train_epochs=epochs
+    )
 
-#  https://github.com/huggingface/notebooks/blob/master/examples/language_modeling.ipynb
-dc = DataCollatorForLanguageModeling(
-    tokenizer=tokenizer, mlm=False, pad_to_multiple_of=1024,
-)
+    #  https://github.com/huggingface/notebooks/blob/master/examples/language_modeling.ipynb
+    dc = DataCollatorForLanguageModeling(
+        tokenizer=tokenizer, mlm=False, pad_to_multiple_of=1024,
+    )
 
-trainer = Trainer(
-    model=model, args=training_args, train_dataset=ds, data_collator=dc
-)
-tokenizer.save_pretrained('tokenizer')
-trainer.train()
+    trainer = Trainer(
+        model=mdl, args=training_args, train_dataset=ds, data_collator=dc
+    )
+    trainer.train()
+    tokenizer.save_pretrained(Path(output_dir) / 'tokenizer')
 
-from evaluate import evaluate
 
-evaluate(model, tokenizer)
+@click.command()
+@click.argument('author')
+@click.option('--epochs', default=3)
+@click.option('--base_model', default=None)
+def cli(author, epochs, base_model):
+    data = (Path.cwd() / f'data/{author}/clean.txt').read_text()
+
+    #  I wonder if I can not do this here...
+    #  just pass in a big string to the DataCollator ?
+    data = data.replace('\n', '')
+    step = 1024
+    data = [data[i:i+step] for i in range(0, len(data), step)]
+    ds = Dataset.from_dict({'text': data})
+
+    output_dir = Path().cwd() / f'models/{author}'
+    train_gpt2(ds, output_dir, epochs=epochs, base_model=base_model)
+
+
+if __name__ == '__main__':
+    cli()
