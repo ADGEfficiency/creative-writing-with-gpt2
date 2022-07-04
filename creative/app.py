@@ -4,6 +4,7 @@ import streamlit as st
 from transformers import GPT2Tokenizer, GPT2Config, GPT2Model, GPT2LMHeadModel
 
 from creative.evaluate import evaluate, load_checkpoint
+from creative.load import load_models, load_last_checkpoint
 
 
 @st.cache(allow_output_mutation=True)
@@ -11,20 +12,11 @@ def hist(data=[]):
     return data
 
 
-def load_models(base: Path=Path.cwd()):
-    return [p for p in (base / 'models').iterdir() if p.is_dir()]
-
-def get_last_checkpoint(model):
-    checkpoints = [p for p in model.iterdir() if p.is_dir() and 'checkpoint' in str(p)]
-    assert len(checkpoints) > 0, "No checkpoint found!"
-    return list(sorted(checkpoints))[-1]
-
 if __name__ == '__main__':
     models = load_models()
     model = st.selectbox('model', models)
 
-    checkpoint = get_last_checkpoint(model)
-
+    checkpoint = load_last_checkpoint(model)
     model = load_checkpoint(checkpoint)
     tokenizer = model['tokenizer']
     model = model['mdl']
