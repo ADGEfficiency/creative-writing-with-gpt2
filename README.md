@@ -1,16 +1,41 @@
 # Creative Writing with GPT-2
 
-[Get started quickly on Google Colab]().
+[Use a pre-trained model on Binder]()
 
-The GPT series of language models from Open AI have revolutionized natural language processing.
+This tool allows fine-tuning of GPT2 by training on text on a single `txt` file - text from your favourite authors.  This will create a language model that will write text like that author.
 
-This tool allows you to fine-tune GPT2 by training on text from your favourite authors.  You can then write together by inputting a prompt, seeing the resulting text and choosing whether to keep it or modify it.  An example of human and machine being creative together!
+You can then write together with your model by inputting a prompt, seeing the resulting text and choosing whether to keep it or modify it.  Human and machine being creative together!
 
-This repo provides:
+The GPT series of language models from Open AI have revolutionized natural language processing. GPT2 is the most advanced GPX language model where the weights are public.
 
-- CLI to fine-tune GPT2 with a single `clean.txt` file,
-- 13 `clean.txt` datasets for authors like Tolkien and Issac Assimov,
-- a Streamlit app to interact & generate text with a fine-tuned model,
+This repo provides training with a Python CLI to fine-tune GPT2 with a single `clean.txt` file:
+
+```shell
+$ python creative/train.py harry
+```
+
+`clean.txt` datasets for authors like Tolkien and Issac Assimov:
+
+```
+$ tree -L 1 data
+data
+├── alan-watts
+├── art-of-war
+├── asimov
+├── bible
+├── harry
+├── hemingway
+├── mahabarta
+├── meditations
+├── plato
+└── tolkien
+```
+
+A Streamlit app to interact & generate text with a fine-tuned model:
+
+```shell
+$ make app
+```
 
 
 ## Examples of Generated Text
@@ -54,6 +79,7 @@ You can fine-tune your own model as well:
 ```shell
 $ python train.py harry
 ```
+
 The command above will use data from `./data/harry/clean.txt` and save your model checkpoints & tokenizer in `./models/harry`.
 
 ```shell
@@ -80,7 +106,7 @@ Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they 
 
 I've included a few authors I like to write with:
 
-```
+```shell
 $ tree -L 1 data
 data
 ├── alan-watts
