@@ -15,3 +15,9 @@ pulls3:
 
 pushs3:
 	aws s3 sync ./models s3://adgefficiency-public/creative-writing-with-gpt2/models
+
+suite:
+	python3 creative/fine_tune.py harry
+	python3 creative/fine_tune.py tolkien
+	python3 creative/fine_tune.py asimov
+	python3 creative/fine_tune.py bible

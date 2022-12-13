@@ -46,7 +46,7 @@ def train_gpt2(ds: Dataset, output_dir: Path, epochs: int, base_model:str=None) 
 
 def main(author: str, epochs: int, base_model: str = None) -> None:
     data = Path(f"./data/{author}/clean.txt").read_text()
-    data = data.replace("\n", "")
+    data = data.replace("\n", " ")
     step = 1024
     data = [data[i : i + step] for i in range(0, len(data), step)]
     ds = Dataset.from_dict({"text": data})
