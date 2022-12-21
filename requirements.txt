@@ -1,0 +1,6 @@
+transformers==4.11.3
+datasets==1.15.1
+awscli==1.25.12
+streamlit==1.10.0
+black
+isort
