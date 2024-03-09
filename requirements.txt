@@ -1,6 +1,7 @@
-transformers==4.11.3
-datasets==1.15.1
+transformers
+datasets
 awscli==1.25.12
-streamlit==1.10.0
+streamlit
 black
 isort
+pyyaml==5.3.1
