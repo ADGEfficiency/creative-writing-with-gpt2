@@ -49,7 +49,7 @@ def main(author: str, epochs: int, base_model: str = None) -> None:
     data = data.replace("\n", " ")
     step = 1024
     data = [data[i : i + step] for i in range(0, len(data), step)]
-    ds = Dataset.from_dict({"text": data})
+    ds = Dataset.from_dict({"text": data[:2]})
     output_dir = Path(f"./models/{author}")
     train_gpt2(ds, output_dir, epochs=epochs, base_model=base_model)
 
